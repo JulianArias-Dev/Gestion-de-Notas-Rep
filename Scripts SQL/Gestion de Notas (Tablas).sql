@@ -1,4 +1,4 @@
-USE Julian_NotasDB;
+USE JulianHernandoDavid_NotasDB;
 Go
 
 CREATE TABLE CARGOS(
