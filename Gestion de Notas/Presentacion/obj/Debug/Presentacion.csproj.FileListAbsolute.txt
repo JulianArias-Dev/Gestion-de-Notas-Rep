@@ -8,3 +8,5 @@ C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.csp
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.exe
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.pdb
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.Home.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlDocentes.resources
