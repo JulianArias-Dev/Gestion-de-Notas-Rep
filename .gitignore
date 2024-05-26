@@ -1,0 +1,58 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# User-specific files (Visual Studio Code)
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Enable "untrack" to ignore changes of version files
+# e.g. AssemblyInfo.cs, VersionInfo.cs (.NET)
+# *.Version.cs
+# AssemblyInfo.cs
+
+# Temporary files
+*.vspscc
+*.vssscc
+~$*
+*.cache
+*.bak
+*.tmp
+*.temp
+*.pid
+*.svclog
+*.ide*
+
+# Visual Studio 2019/2022
+.vs/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
