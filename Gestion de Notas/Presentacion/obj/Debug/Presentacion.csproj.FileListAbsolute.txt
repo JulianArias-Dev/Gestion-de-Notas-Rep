@@ -1,0 +1,14 @@
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlAdministrativos.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlDocentes.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.FormLogin.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.Home.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Presentacion.exe
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Presentacion.pdb
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlEstudiante.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.exe
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.pdb
