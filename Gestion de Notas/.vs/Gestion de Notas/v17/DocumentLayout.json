@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{6BA3C97E-9832-4165-8F1C-DFD4E744CE9C}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BA3C97E-9832-4165-8F1C-DFD4E744CE9C}|Presentacion\\Presentacion.csproj|c:\\gestion-de-notas-rep\\gestion de notas\\presentacion\\controldocentes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6BA3C97E-9832-4165-8F1C-DFD4E744CE9C}|Presentacion\\Presentacion.csproj|C:\\Gestion-de-Notas-Rep\\Gestion de Notas\\presentacion\\controldocentes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BA3C97E-9832-4165-8F1C-DFD4E744CE9C}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\controldocentes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -88,8 +88,7 @@
               "RelativeToolTip": "Presentacion\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T22:21:27.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T22:21:27.413Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "ToolTip": "C:\\Gestion-de-Notas-Rep\\Gestion de Notas\\Presentacion\\Home.cs [Dise\u00F1o]",
               "RelativeToolTip": "Presentacion\\Home.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T21:45:59.817Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-25T21:45:59.817Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "Presentacion\\FormLogin.cs",
               "ViewState": "AQIAAEYAAAAAAAAAAIAwwFkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:19:12.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T03:19:12.599Z"
             },
             {
               "$type": "Document",
@@ -125,8 +122,7 @@
               "ToolTip": "C:\\Gestion-de-Notas-Rep\\Gestion de Notas\\Presentacion\\FormLogin.cs [Dise\u00F1o]",
               "RelativeToolTip": "Presentacion\\FormLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T03:11:53.693Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-08T03:11:53.693Z"
             }
           ]
         }
