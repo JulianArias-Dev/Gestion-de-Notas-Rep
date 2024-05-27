@@ -59,7 +59,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1782, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1784, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -72,26 +72,27 @@
             this.personalTSM});
             this.opcion1ToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.opcion1ToolStripMenuItem.Name = "opcion1ToolStripMenuItem";
-            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
+            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(80, 25);
             this.opcion1ToolStripMenuItem.Text = "Registro";
             // 
             // estudiantesTSM
             // 
             this.estudiantesTSM.Name = "estudiantesTSM";
-            this.estudiantesTSM.Size = new System.Drawing.Size(279, 30);
+            this.estudiantesTSM.Size = new System.Drawing.Size(245, 26);
             this.estudiantesTSM.Text = "Estudiantes";
+            this.estudiantesTSM.Click += new System.EventHandler(this.estudiantesTSM_Click);
             // 
             // docentesTSM
             // 
             this.docentesTSM.Name = "docentesTSM";
-            this.docentesTSM.Size = new System.Drawing.Size(279, 30);
+            this.docentesTSM.Size = new System.Drawing.Size(245, 26);
             this.docentesTSM.Text = "Docentes";
             this.docentesTSM.Click += new System.EventHandler(this.docentesTSM_Click);
             // 
             // personalTSM
             // 
             this.personalTSM.Name = "personalTSM";
-            this.personalTSM.Size = new System.Drawing.Size(279, 30);
+            this.personalTSM.Size = new System.Drawing.Size(245, 26);
             this.personalTSM.Text = "Personal Administrativo";
             // 
             // opcion2ToolStripMenuItem
@@ -100,19 +101,19 @@
             this.materiasToolStripMenuItem,
             this.especialidadesToolStripMenuItem});
             this.opcion2ToolStripMenuItem.Name = "opcion2ToolStripMenuItem";
-            this.opcion2ToolStripMenuItem.Size = new System.Drawing.Size(206, 29);
+            this.opcion2ToolStripMenuItem.Size = new System.Drawing.Size(178, 25);
             this.opcion2ToolStripMenuItem.Text = "Asignacion a Docentes";
             // 
             // materiasToolStripMenuItem
             // 
             this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
+            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.materiasToolStripMenuItem.Text = "Materias";
             // 
             // especialidadesToolStripMenuItem
             // 
             this.especialidadesToolStripMenuItem.Name = "especialidadesToolStripMenuItem";
-            this.especialidadesToolStripMenuItem.Size = new System.Drawing.Size(206, 30);
+            this.especialidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.especialidadesToolStripMenuItem.Text = "Especialidades";
             // 
             // gestionDeNotasToolStripMenuItem
@@ -122,25 +123,25 @@
             this.consultarToolStripMenuItem,
             this.estadisticasToolStripMenuItem});
             this.gestionDeNotasToolStripMenuItem.Name = "gestionDeNotasToolStripMenuItem";
-            this.gestionDeNotasToolStripMenuItem.Size = new System.Drawing.Size(163, 29);
+            this.gestionDeNotasToolStripMenuItem.Size = new System.Drawing.Size(141, 25);
             this.gestionDeNotasToolStripMenuItem.Text = "Gestion de Notas";
             // 
             // gestionarToolStripMenuItem
             // 
             this.gestionarToolStripMenuItem.Name = "gestionarToolStripMenuItem";
-            this.gestionarToolStripMenuItem.Size = new System.Drawing.Size(182, 30);
+            this.gestionarToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.gestionarToolStripMenuItem.Text = "Gestionar";
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(182, 30);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
             // estadisticasToolStripMenuItem
             // 
             this.estadisticasToolStripMenuItem.Name = "estadisticasToolStripMenuItem";
-            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(182, 30);
+            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.estadisticasToolStripMenuItem.Text = "Estadisticas";
             // 
             // fatherPanel
@@ -153,7 +154,7 @@
             this.fatherPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.fatherPanel.Controls.Add(this.label1);
             this.fatherPanel.Location = new System.Drawing.Point(5, 35);
-            this.fatherPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fatherPanel.Margin = new System.Windows.Forms.Padding(2);
             this.fatherPanel.Name = "fatherPanel";
             this.fatherPanel.Size = new System.Drawing.Size(1770, 940);
             this.fatherPanel.TabIndex = 1;
@@ -169,7 +170,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label1.Location = new System.Drawing.Point(271, 740);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1292, 76);
+            this.label1.Size = new System.Drawing.Size(1136, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "Intelligent Score Management in Institutes";
             // 
@@ -177,11 +178,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1782, 980);
+            this.ClientSize = new System.Drawing.Size(1784, 985);
             this.Controls.Add(this.fatherPanel);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(1800, 1024);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
