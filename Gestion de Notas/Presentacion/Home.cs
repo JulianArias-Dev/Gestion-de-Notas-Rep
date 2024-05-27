@@ -41,5 +41,11 @@ namespace Presentacion
             var children = new ControlDocentes();
             openChildForm(children);
         }
+
+        private void estudiantesTSM_Click(object sender, EventArgs e)
+        {
+            var children = new ControlEstudiante();
+            openChildForm(children);
+        }
     }
 }
