@@ -47,5 +47,17 @@ namespace Presentacion
             var children = new ControlEstudiante();
             openChildForm(children);
         }
+
+        private void materiasTSM_Click(object sender, EventArgs e)
+        {
+            var children = new AsignacionMaterias();
+            openChildForm(children);
+        }
+
+        private void especialidadesTSM_Click(object sender, EventArgs e)
+        {
+            var children = new AsignacionEspecialidades();
+            openChildForm(children);
+        }
     }
 }
