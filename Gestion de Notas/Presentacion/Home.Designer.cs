@@ -35,8 +35,8 @@
             this.docentesTSM = new System.Windows.Forms.ToolStripMenuItem();
             this.personalTSM = new System.Windows.Forms.ToolStripMenuItem();
             this.opcion2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materiasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.especialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materiasTSM = new System.Windows.Forms.ToolStripMenuItem();
+            this.especialidadesTSM = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDeNotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,7 +59,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1784, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1370, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,23 +98,25 @@
             // opcion2ToolStripMenuItem
             // 
             this.opcion2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.materiasToolStripMenuItem,
-            this.especialidadesToolStripMenuItem});
+            this.materiasTSM,
+            this.especialidadesTSM});
             this.opcion2ToolStripMenuItem.Name = "opcion2ToolStripMenuItem";
             this.opcion2ToolStripMenuItem.Size = new System.Drawing.Size(178, 25);
             this.opcion2ToolStripMenuItem.Text = "Asignacion a Docentes";
             // 
-            // materiasToolStripMenuItem
+            // materiasTSM
             // 
-            this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.materiasToolStripMenuItem.Text = "Materias";
+            this.materiasTSM.Name = "materiasTSM";
+            this.materiasTSM.Size = new System.Drawing.Size(180, 26);
+            this.materiasTSM.Text = "Materias";
+            this.materiasTSM.Click += new System.EventHandler(this.materiasTSM_Click);
             // 
-            // especialidadesToolStripMenuItem
+            // especialidadesTSM
             // 
-            this.especialidadesToolStripMenuItem.Name = "especialidadesToolStripMenuItem";
-            this.especialidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.especialidadesToolStripMenuItem.Text = "Especialidades";
+            this.especialidadesTSM.Name = "especialidadesTSM";
+            this.especialidadesTSM.Size = new System.Drawing.Size(180, 26);
+            this.especialidadesTSM.Text = "Especialidades";
+            this.especialidadesTSM.Click += new System.EventHandler(this.especialidadesTSM_Click);
             // 
             // gestionDeNotasToolStripMenuItem
             // 
@@ -170,23 +172,23 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label1.Location = new System.Drawing.Point(271, 740);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1136, 65);
+            this.label1.Size = new System.Drawing.Size(1159, 65);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Intelligent Score Management in Institutes";
+            this.label1.Text = "Intelligent Score Management for Institutes";
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1784, 985);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.fatherPanel);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(1800, 1024);
+            this.MinimumSize = new System.Drawing.Size(1364, 718);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Intelligent Score Management in Institutes - ISMI";
+            this.Text = "Intelligent Score Management for Institutes - ISMI";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.fatherPanel.ResumeLayout(false);
@@ -205,8 +207,8 @@
         private System.Windows.Forms.Panel fatherPanel;
         private System.Windows.Forms.ToolStripMenuItem docentesTSM;
         private System.Windows.Forms.ToolStripMenuItem personalTSM;
-        private System.Windows.Forms.ToolStripMenuItem materiasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem especialidadesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem materiasTSM;
+        private System.Windows.Forms.ToolStripMenuItem especialidadesTSM;
         private System.Windows.Forms.ToolStripMenuItem gestionDeNotasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
