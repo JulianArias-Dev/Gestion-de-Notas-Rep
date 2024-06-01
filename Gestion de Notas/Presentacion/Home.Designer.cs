@@ -59,7 +59,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1370, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(960, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -94,6 +94,7 @@
             this.personalTSM.Name = "personalTSM";
             this.personalTSM.Size = new System.Drawing.Size(245, 26);
             this.personalTSM.Text = "Personal Administrativo";
+            this.personalTSM.Click += new System.EventHandler(this.personalTSM_Click);
             // 
             // opcion2ToolStripMenuItem
             // 
@@ -148,17 +149,15 @@
             // 
             // fatherPanel
             // 
-            this.fatherPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.fatherPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.fatherPanel.BackgroundImage = global::Presentacion.Properties.Resources.Logo;
             this.fatherPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.fatherPanel.Controls.Add(this.label1);
-            this.fatherPanel.Location = new System.Drawing.Point(5, 35);
+            this.fatherPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fatherPanel.Location = new System.Drawing.Point(0, 29);
             this.fatherPanel.Margin = new System.Windows.Forms.Padding(2);
             this.fatherPanel.Name = "fatherPanel";
-            this.fatherPanel.Size = new System.Drawing.Size(1770, 940);
+            this.fatherPanel.Size = new System.Drawing.Size(960, 568);
             this.fatherPanel.TabIndex = 1;
             // 
             // label1
@@ -180,12 +179,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(960, 597);
             this.Controls.Add(this.fatherPanel);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(1364, 718);
+            this.MinimumSize = new System.Drawing.Size(976, 636);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Intelligent Score Management for Institutes - ISMI";

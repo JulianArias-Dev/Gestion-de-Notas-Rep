@@ -28,3 +28,4 @@ C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentaci
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.exe
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.pdb
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.Estadisticas.resources
