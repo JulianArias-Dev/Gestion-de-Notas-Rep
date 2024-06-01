@@ -118,6 +118,9 @@
     <EmbeddedResource Include="ControlEstudiante.resx">
       <DependentUpon>ControlEstudiante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas.resx">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>

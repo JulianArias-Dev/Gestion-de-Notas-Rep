@@ -51,9 +51,10 @@
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEliminar.BackColor = System.Drawing.Color.Red;
             this.btnEliminar.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(501, 322);
+            this.btnEliminar.Location = new System.Drawing.Point(582, 365);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(254, 33);
             this.btnEliminar.TabIndex = 21;
@@ -62,9 +63,10 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(498, 53);
+            this.label2.Location = new System.Drawing.Point(579, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 16);
             this.label2.TabIndex = 20;
@@ -72,16 +74,18 @@
             // 
             // txtEspecialidad
             // 
-            this.txtEspecialidad.Location = new System.Drawing.Point(596, 49);
+            this.txtEspecialidad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEspecialidad.Location = new System.Drawing.Point(677, 92);
             this.txtEspecialidad.Name = "txtEspecialidad";
             this.txtEspecialidad.Size = new System.Drawing.Size(159, 20);
             this.txtEspecialidad.TabIndex = 19;
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCancelar.BackColor = System.Drawing.Color.Red;
             this.btnCancelar.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(69, 358);
+            this.btnCancelar.Location = new System.Drawing.Point(150, 401);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(116, 43);
             this.btnCancelar.TabIndex = 18;
@@ -90,17 +94,19 @@
             // 
             // cmbEspecialidad
             // 
+            this.cmbEspecialidad.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbEspecialidad.FormattingEnabled = true;
-            this.cmbEspecialidad.Location = new System.Drawing.Point(501, 89);
+            this.cmbEspecialidad.Location = new System.Drawing.Point(582, 132);
             this.cmbEspecialidad.Name = "cmbEspecialidad";
             this.cmbEspecialidad.Size = new System.Drawing.Size(139, 21);
             this.cmbEspecialidad.TabIndex = 17;
             // 
             // btnAsignar
             // 
+            this.btnAsignar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAsignar.BackColor = System.Drawing.Color.LawnGreen;
             this.btnAsignar.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAsignar.Location = new System.Drawing.Point(239, 358);
+            this.btnAsignar.Location = new System.Drawing.Point(320, 401);
             this.btnAsignar.Name = "btnAsignar";
             this.btnAsignar.Size = new System.Drawing.Size(116, 43);
             this.btnAsignar.TabIndex = 16;
@@ -109,9 +115,10 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAgregar.BackColor = System.Drawing.Color.Gold;
             this.btnAgregar.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(658, 84);
+            this.btnAgregar.Location = new System.Drawing.Point(739, 127);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(97, 28);
             this.btnAgregar.TabIndex = 15;
@@ -120,14 +127,16 @@
             // 
             // listEspecialidades
             // 
+            this.listEspecialidades.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listEspecialidades.FormattingEnabled = true;
-            this.listEspecialidades.Location = new System.Drawing.Point(501, 130);
+            this.listEspecialidades.Location = new System.Drawing.Point(582, 173);
             this.listEspecialidades.Name = "listEspecialidades";
             this.listEspecialidades.Size = new System.Drawing.Size(254, 186);
             this.listEspecialidades.TabIndex = 14;
             // 
             // gboxDocente
             // 
+            this.gboxDocente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gboxDocente.Controls.Add(this.lblCargo);
             this.gboxDocente.Controls.Add(this.lblFechaNacimiento);
             this.gboxDocente.Controls.Add(this.lblDireccion);
@@ -136,7 +145,7 @@
             this.gboxDocente.Controls.Add(this.lblApellidos);
             this.gboxDocente.Controls.Add(this.lblNombres);
             this.gboxDocente.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gboxDocente.Location = new System.Drawing.Point(48, 105);
+            this.gboxDocente.Location = new System.Drawing.Point(129, 148);
             this.gboxDocente.Name = "gboxDocente";
             this.gboxDocente.Size = new System.Drawing.Size(350, 211);
             this.gboxDocente.TabIndex = 13;
@@ -215,9 +224,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 53);
+            this.label1.Location = new System.Drawing.Point(126, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 16);
             this.label1.TabIndex = 12;
@@ -225,7 +235,8 @@
             // 
             // txtIdentificacion
             // 
-            this.txtIdentificacion.Location = new System.Drawing.Point(151, 49);
+            this.txtIdentificacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtIdentificacion.Location = new System.Drawing.Point(232, 92);
             this.txtIdentificacion.Name = "txtIdentificacion";
             this.txtIdentificacion.Size = new System.Drawing.Size(247, 20);
             this.txtIdentificacion.TabIndex = 11;
@@ -234,7 +245,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(960, 534);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtEspecialidad);
@@ -246,6 +257,7 @@
             this.Controls.Add(this.gboxDocente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtIdentificacion);
+            this.MinimumSize = new System.Drawing.Size(976, 573);
             this.Name = "AsignacionEspecialidades";
             this.Text = "Asignacion Especialidades";
             this.gboxDocente.ResumeLayout(false);

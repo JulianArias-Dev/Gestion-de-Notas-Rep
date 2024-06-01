@@ -48,6 +48,12 @@ namespace Presentacion
             openChildForm(children);
         }
 
+        private void personalTSM_Click(object sender, EventArgs e)
+        {
+            var children = new ControlAdministrativos();
+            openChildForm(children);
+        }
+
         private void materiasTSM_Click(object sender, EventArgs e)
         {
             var children = new AsignacionMaterias();
