@@ -85,7 +85,7 @@ namespace Presentacion
             var home = new Home();
             this.Hide();
             home.ShowDialog();
-            Application.Exit();
+            this.Show();
         }
 
     }

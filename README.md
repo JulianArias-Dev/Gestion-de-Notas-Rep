@@ -68,5 +68,8 @@ A grandes rasgos, el objetivo de este proyecto es desarrollar una aplicación de
 Julian Arias - David Payares - Hernando Diaz
 
 ### 25/05/2024
-
 A dia de hoy se ha subido el srcipt de la creación de las tablas en la base de datos
+
+### 03/06/2024
+A día de hoy se ha trabajado en el diseño de la GUI
+

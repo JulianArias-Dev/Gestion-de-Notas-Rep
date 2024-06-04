@@ -29,3 +29,8 @@ C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentaci
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.exe
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.pdb
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.Estadisticas.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.AsignacionEspecialidades.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.AsignacionMaterias.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.Estadisticas.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlCursos.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlMateriasA.resources
