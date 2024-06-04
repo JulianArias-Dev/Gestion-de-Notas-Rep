@@ -65,5 +65,17 @@ namespace Presentacion
             var children = new AsignacionEspecialidades();
             openChildForm(children);
         }
+
+        private void crearCursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var children = new ControlCursos();
+            openChildForm(children);
+        }
+
+        private void asignarMateriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var children = new ControlMateriasA();
+            openChildForm(children);
+        }
     }
 }

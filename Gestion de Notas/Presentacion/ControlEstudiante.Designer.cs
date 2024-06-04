@@ -52,7 +52,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -60,12 +62,12 @@
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Fax", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(592, 105);
+            this.dateTimePicker1.Location = new System.Drawing.Point(592, 124);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(201, 24);
+            this.dateTimePicker1.Size = new System.Drawing.Size(201, 26);
             this.dateTimePicker1.TabIndex = 96;
             // 
             // label13
@@ -76,7 +78,7 @@
             this.label13.Location = new System.Drawing.Point(30, 236);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(145, 16);
+            this.label13.Size = new System.Drawing.Size(164, 18);
             this.label13.TabIndex = 95;
             this.label13.Text = "Listado Estudiantes";
             // 
@@ -85,10 +87,10 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(440, 111);
+            this.label9.Location = new System.Drawing.Point(440, 130);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(143, 16);
+            this.label9.Size = new System.Drawing.Size(162, 18);
             this.label9.TabIndex = 89;
             this.label9.Text = "Fecha Nacimiento :";
             // 
@@ -96,10 +98,10 @@
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox4.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(592, 69);
+            this.textBox4.Location = new System.Drawing.Point(592, 88);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(201, 23);
+            this.textBox4.Size = new System.Drawing.Size(201, 25);
             this.textBox4.TabIndex = 88;
             // 
             // label8
@@ -107,10 +109,10 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(440, 76);
+            this.label8.Location = new System.Drawing.Point(440, 95);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 16);
+            this.label8.Size = new System.Drawing.Size(95, 18);
             this.label8.TabIndex = 87;
             this.label8.Text = "Dirección :";
             // 
@@ -118,10 +120,10 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(592, 34);
+            this.textBox1.Location = new System.Drawing.Point(592, 53);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 23);
+            this.textBox1.Size = new System.Drawing.Size(201, 25);
             this.textBox1.TabIndex = 86;
             // 
             // label1
@@ -129,10 +131,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(440, 41);
+            this.label1.Location = new System.Drawing.Point(440, 60);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 16);
+            this.label1.Size = new System.Drawing.Size(90, 18);
             this.label1.TabIndex = 85;
             this.label1.Text = "Teléfono :";
             // 
@@ -140,10 +142,10 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(592, 2);
+            this.textBox2.Location = new System.Drawing.Point(592, 21);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 23);
+            this.textBox2.Size = new System.Drawing.Size(201, 25);
             this.textBox2.TabIndex = 84;
             // 
             // label4
@@ -151,10 +153,10 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(440, 5);
+            this.label4.Location = new System.Drawing.Point(440, 24);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 16);
+            this.label4.Size = new System.Drawing.Size(167, 18);
             this.label4.TabIndex = 83;
             this.label4.Text = "Correo Electrónico :";
             // 
@@ -162,10 +164,10 @@
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox3.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(183, 143);
+            this.textBox3.Location = new System.Drawing.Point(183, 162);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(201, 23);
+            this.textBox3.Size = new System.Drawing.Size(201, 25);
             this.textBox3.TabIndex = 82;
             // 
             // label7
@@ -173,21 +175,22 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(29, 146);
+            this.label7.Location = new System.Drawing.Point(29, 165);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 16);
+            this.label7.Size = new System.Drawing.Size(161, 18);
             this.label7.TabIndex = 81;
             this.label7.Text = "Segundo Apellido :";
             // 
             // btnEliminarCliente
             // 
             this.btnEliminarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEliminarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(48)))), ((int)(((byte)(24)))));
             this.btnEliminarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnEliminarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnEliminarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnEliminarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarCliente.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEliminarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(48)))), ((int)(((byte)(24)))));
+            this.btnEliminarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(48)))), ((int)(((byte)(24)))));
+            this.btnEliminarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminarCliente.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarCliente.Location = new System.Drawing.Point(814, 454);
             this.btnEliminarCliente.Margin = new System.Windows.Forms.Padding(2);
@@ -195,16 +198,15 @@
             this.btnEliminarCliente.Size = new System.Drawing.Size(115, 30);
             this.btnEliminarCliente.TabIndex = 80;
             this.btnEliminarCliente.Text = "Eliminar";
-            this.btnEliminarCliente.UseVisualStyleBackColor = true;
+            this.btnEliminarCliente.UseVisualStyleBackColor = false;
             // 
             // btnModificarCliente
             // 
             this.btnModificarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnModificarCliente.BackColor = System.Drawing.Color.Gold;
             this.btnModificarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnModificarCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnModificarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnModificarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnModificarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarCliente.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnModificarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificarCliente.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCliente.Location = new System.Drawing.Point(814, 409);
             this.btnModificarCliente.Margin = new System.Windows.Forms.Padding(2);
@@ -212,41 +214,43 @@
             this.btnModificarCliente.Size = new System.Drawing.Size(115, 30);
             this.btnModificarCliente.TabIndex = 79;
             this.btnModificarCliente.Text = "Modificar";
-            this.btnModificarCliente.UseVisualStyleBackColor = true;
+            this.btnModificarCliente.UseVisualStyleBackColor = false;
             // 
             // btnBuscarCliente
             // 
             this.btnBuscarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBuscarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
             this.btnBuscarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscarCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+            this.btnBuscarCliente.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnBuscarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
             this.btnBuscarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnBuscarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscarCliente.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarCliente.Location = new System.Drawing.Point(814, 364);
+            this.btnBuscarCliente.Location = new System.Drawing.Point(814, 323);
             this.btnBuscarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(115, 30);
             this.btnBuscarCliente.TabIndex = 78;
             this.btnBuscarCliente.Text = "Buscar";
-            this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.UseVisualStyleBackColor = false;
             // 
             // btnRegistarCliente
             // 
             this.btnRegistarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRegistarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(254)))), ((int)(((byte)(21)))));
             this.btnRegistarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistarCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnRegistarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnRegistarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.btnRegistarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistarCliente.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRegistarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(254)))), ((int)(((byte)(21)))));
+            this.btnRegistarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(254)))), ((int)(((byte)(21)))));
+            this.btnRegistarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegistarCliente.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistarCliente.Location = new System.Drawing.Point(814, 319);
+            this.btnRegistarCliente.Location = new System.Drawing.Point(814, 366);
             this.btnRegistarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistarCliente.Name = "btnRegistarCliente";
             this.btnRegistarCliente.Size = new System.Drawing.Size(115, 30);
             this.btnRegistarCliente.TabIndex = 77;
             this.btnRegistarCliente.Text = "Registrar";
-            this.btnRegistarCliente.UseVisualStyleBackColor = true;
+            this.btnRegistarCliente.UseVisualStyleBackColor = false;
             // 
             // dgvCustomerList
             // 
@@ -265,10 +269,10 @@
             // 
             this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTelefono.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(183, 108);
+            this.txtTelefono.Location = new System.Drawing.Point(183, 127);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(201, 23);
+            this.txtTelefono.Size = new System.Drawing.Size(201, 25);
             this.txtTelefono.TabIndex = 75;
             // 
             // label5
@@ -276,10 +280,10 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 111);
+            this.label5.Location = new System.Drawing.Point(29, 130);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 16);
+            this.label5.Size = new System.Drawing.Size(143, 18);
             this.label5.TabIndex = 74;
             this.label5.Text = "Primer Apellido :";
             // 
@@ -287,10 +291,10 @@
             // 
             this.txtApellidos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtApellidos.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.Location = new System.Drawing.Point(183, 73);
+            this.txtApellidos.Location = new System.Drawing.Point(183, 92);
             this.txtApellidos.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(201, 23);
+            this.txtApellidos.Size = new System.Drawing.Size(201, 25);
             this.txtApellidos.TabIndex = 73;
             // 
             // label6
@@ -298,10 +302,10 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 76);
+            this.label6.Location = new System.Drawing.Point(29, 95);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 16);
+            this.label6.Size = new System.Drawing.Size(163, 18);
             this.label6.TabIndex = 72;
             this.label6.Text = "Segundo Nombre : ";
             // 
@@ -309,10 +313,10 @@
             // 
             this.txtNombres.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombres.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.Location = new System.Drawing.Point(183, 38);
+            this.txtNombres.Location = new System.Drawing.Point(183, 57);
             this.txtNombres.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(201, 23);
+            this.txtNombres.Size = new System.Drawing.Size(201, 25);
             this.txtNombres.TabIndex = 71;
             // 
             // label3
@@ -320,10 +324,10 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(29, 41);
+            this.label3.Location = new System.Drawing.Point(29, 60);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 16);
+            this.label3.Size = new System.Drawing.Size(140, 18);
             this.label3.TabIndex = 70;
             this.label3.Text = "Primer Nombre :";
             // 
@@ -331,10 +335,10 @@
             // 
             this.txtIdentificacion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtIdentificacion.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdentificacion.Location = new System.Drawing.Point(183, 5);
+            this.txtIdentificacion.Location = new System.Drawing.Point(183, 24);
             this.txtIdentificacion.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(201, 23);
+            this.txtIdentificacion.Size = new System.Drawing.Size(201, 25);
             this.txtIdentificacion.TabIndex = 69;
             // 
             // label2
@@ -342,18 +346,33 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 9);
+            this.label2.Location = new System.Drawing.Point(30, 28);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 16);
+            this.label2.Size = new System.Drawing.Size(131, 18);
             this.label2.TabIndex = 68;
             this.label2.Text = "Identificación :";
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Image = global::Presentacion.Properties.Resources.logout;
+            this.btnBack.Location = new System.Drawing.Point(880, 13);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(49, 50);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBack.TabIndex = 117;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // ControlEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(960, 534);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label9);
@@ -382,6 +401,7 @@
             this.Name = "ControlEstudiante";
             this.Text = "ControlEstudiante";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,5 +432,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtIdentificacion;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox btnBack;
     }
 }

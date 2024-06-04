@@ -60,10 +60,10 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtConstraseña);
             this.panel1.Controls.Add(this.txtUsuario);
-            this.panel1.Location = new System.Drawing.Point(309, 28);
+            this.panel1.Location = new System.Drawing.Point(317, 28);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(594, 575);
+            this.panel1.Size = new System.Drawing.Size(586, 575);
             this.panel1.TabIndex = 0;
             // 
             // btnShowHide
@@ -119,7 +119,7 @@
             this.txtConstraseña.Location = new System.Drawing.Point(160, 247);
             this.txtConstraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtConstraseña.Name = "txtConstraseña";
-            this.txtConstraseña.Size = new System.Drawing.Size(305, 26);
+            this.txtConstraseña.Size = new System.Drawing.Size(305, 28);
             this.txtConstraseña.TabIndex = 2;
             this.txtConstraseña.Text = "Contraseña";
             this.txtConstraseña.Enter += new System.EventHandler(this.txtConstraseña_Enter);
@@ -133,7 +133,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(160, 208);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(305, 26);
+            this.txtUsuario.Size = new System.Drawing.Size(305, 28);
             this.txtUsuario.TabIndex = 1;
             this.txtUsuario.Text = "Usuario";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
@@ -146,7 +146,7 @@
             this.label1.Location = new System.Drawing.Point(12, 568);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 17);
+            this.label1.Size = new System.Drawing.Size(202, 19);
             this.label1.TabIndex = 3;
             this.label1.Text = "by Hola Mundo Dev´s House ©";
             // 
@@ -157,7 +157,7 @@
             this.label2.Location = new System.Drawing.Point(2, 5);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 17);
+            this.label2.Size = new System.Drawing.Size(88, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "Iniciar Sesión";
             // 
@@ -199,7 +199,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(898, 28);
+            this.panel2.Size = new System.Drawing.Size(903, 28);
             this.panel2.TabIndex = 5;
             // 
             // label3
@@ -208,7 +208,7 @@
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(105, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 24);
+            this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "I S M I";
             // 
@@ -216,9 +216,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(2, 298);
+            this.label4.Location = new System.Drawing.Point(1, 298);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(277, 17);
+            this.label4.Size = new System.Drawing.Size(311, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Intelligent Score Management for Institutes";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
