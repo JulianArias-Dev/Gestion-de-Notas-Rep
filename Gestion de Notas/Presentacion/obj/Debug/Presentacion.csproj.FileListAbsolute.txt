@@ -12,3 +12,4 @@ C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Presentacion.pdb
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlEstudiante.resources
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.exe
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.pdb
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.GestionNotas.resources

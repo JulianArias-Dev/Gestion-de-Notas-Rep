@@ -47,5 +47,11 @@ namespace Presentacion
             var children = new ControlEstudiante();
             openChildForm(children);
         }
+
+        private void gestionarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var children = new GestionNotas();
+            openChildForm(children);
+        }
     }
 }

@@ -129,19 +129,20 @@
             // gestionarToolStripMenuItem
             // 
             this.gestionarToolStripMenuItem.Name = "gestionarToolStripMenuItem";
-            this.gestionarToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.gestionarToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.gestionarToolStripMenuItem.Text = "Gestionar";
+            this.gestionarToolStripMenuItem.Click += new System.EventHandler(this.gestionarToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
             // estadisticasToolStripMenuItem
             // 
             this.estadisticasToolStripMenuItem.Name = "estadisticasToolStripMenuItem";
-            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.estadisticasToolStripMenuItem.Text = "Estadisticas";
             // 
             // fatherPanel
