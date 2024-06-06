@@ -17,10 +17,9 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void ControlDocentes_Load(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
-
     }
 }

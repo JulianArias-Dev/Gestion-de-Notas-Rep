@@ -37,7 +37,8 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Diseño_sin_título-removebg-preview.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -53,11 +54,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsignacionEspecialidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionEspecialidades.Designer.cs">
+      <DependentUpon>AsignacionEspecialidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlAdministrativos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ControlAdministrativos.Designer.cs">
       <DependentUpon>ControlAdministrativos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlCursos.Designer.cs">
+      <DependentUpon>ControlCursos.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlDocentes.cs">
       <SubType>Form</SubType>
@@ -70,6 +83,18 @@
     </Compile>
     <Compile Include="ControlEstudiante.Designer.cs">
       <DependentUpon>ControlEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlMateriasA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlMateriasA.Designer.cs">
+      <DependentUpon>ControlMateriasA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlGestionAcademica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlGestionAcademica.Designer.cs">
+      <DependentUpon>ControlGestionAcademica.cs</DependentUpon>
     </Compile>
     <Compile Include="Estadisticas.cs">
       <SubType>Form</SubType>
@@ -97,14 +122,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ControlAcudiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlAcudiente.Designer.cs">
+      <DependentUpon>ControlAcudiente.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AsignacionEspecialidades.resx">
+      <DependentUpon>AsignacionEspecialidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlAcudiente.resx">
+      <DependentUpon>ControlAcudiente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlAdministrativos.resx">
       <DependentUpon>ControlAdministrativos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlCursos.resx">
+      <DependentUpon>ControlCursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlDocentes.resx">
       <DependentUpon>ControlDocentes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlEstudiante.resx">
       <DependentUpon>ControlEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlMateriasA.resx">
+      <DependentUpon>ControlMateriasA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlGestionAcademica.resx">
+      <DependentUpon>ControlGestionAcademica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas.resx">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -156,7 +205,7 @@
   <ItemGroup>
     <None Include="Assets\hide.png" />
     <None Include="Assets\view.png" />
-    <Content Include="Diseño_sin_título-removebg-preview.ico" />
+    <None Include="Assets\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

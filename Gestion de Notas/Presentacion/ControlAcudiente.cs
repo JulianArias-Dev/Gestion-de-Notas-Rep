@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class ControlAdministrativos : Form
+    public partial class ControlAcudiente : Form
     {
-        public ControlAdministrativos()
+        public ControlAcudiente()
         {
             InitializeComponent();
         }

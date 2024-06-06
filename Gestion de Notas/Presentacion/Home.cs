@@ -38,19 +38,84 @@ namespace Presentacion
 
         private void docentesTSM_Click(object sender, EventArgs e)
         {
-            var children = new ControlDocentes();
-            openChildForm(children);
+            //var children = new ControlDocentes();
+            //openChildForm(children);
         }
 
         private void estudiantesTSM_Click(object sender, EventArgs e)
+        {
+            //var children = new ControlEstudiante();
+            //openChildForm(children);
+        }
+
+
+        private void gestionarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var children = new GestionNotas();
+        }
+        private void personalTSM_Click(object sender, EventArgs e)
+        {
+            var children = new ControlAdministrativos();
+            openChildForm(children);
+        }
+
+        private void materiasTSM_Click(object sender, EventArgs e)
+        {
+            //var children = new AsignacionMaterias();
+            //openChildForm(children);
+        }
+
+        private void especialidadesTSM_Click(object sender, EventArgs e)
+        {
+            var children = new AsignacionEspecialidades();
+            openChildForm(children);
+        }
+
+        private void crearCursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var children = new ControlCursos();
+            openChildForm(children);
+        }
+
+        private void asignarMateriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var children = new ControlMateriasA();
+            openChildForm(children);
+        }
+
+        private void registrarAcudienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var children = new ControlAcudiente();
+            openChildForm(children);
+        }
+
+        private void registrarEstudianteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var children = new ControlEstudiante();
             openChildForm(children);
         }
 
-        private void gestionarToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var children = new GestionNotas();
+            var children = new ControlDocentes();
+            openChildForm(children);
+        }
+
+        private void asignarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void asignarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            var children = new AsignacionEspecialidades();
+            openChildForm(children);
+        }
+
+        private void gestionAcademicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var children = new ControlGestionAcademica();
             openChildForm(children);
         }
     }

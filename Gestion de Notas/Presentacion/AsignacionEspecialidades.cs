@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class ControlAdministrativos : Form
+    public partial class AsignacionEspecialidades : Form
     {
-        public ControlAdministrativos()
+        public AsignacionEspecialidades()
         {
             InitializeComponent();
         }

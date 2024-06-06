@@ -60,10 +60,10 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtConstraseña);
             this.panel1.Controls.Add(this.txtUsuario);
-            this.panel1.Location = new System.Drawing.Point(309, 28);
+            this.panel1.Location = new System.Drawing.Point(317, 28);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(589, 569);
+            this.panel1.Size = new System.Drawing.Size(586, 575);
             this.panel1.TabIndex = 0;
             // 
             // btnShowHide
@@ -199,7 +199,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(898, 28);
+            this.panel2.Size = new System.Drawing.Size(903, 28);
             this.panel2.TabIndex = 5;
             // 
             // label3
@@ -216,11 +216,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(2, 298);
+            this.label4.Location = new System.Drawing.Point(1, 298);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(304, 20);
+            this.label4.Size = new System.Drawing.Size(311, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Intelligent Score Management in Institutes";
+            this.label4.Text = "Intelligent Score Management for Institutes";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormLogin
