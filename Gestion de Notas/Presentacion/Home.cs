@@ -118,5 +118,11 @@ namespace Presentacion
             var children = new ControlGestionAcademica();
             openChildForm(children);
         }
+
+        private void registrarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            var children = new ControlDocentes();
+            openChildForm(children);
+        }
     }
 }
