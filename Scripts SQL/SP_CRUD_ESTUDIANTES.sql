@@ -12,7 +12,7 @@ GO
 -- ==============================================================================================================================
 -- Author:						JULIAN ARIAS
 -- Create date:					04-06-2024
--- Description:					Permite hacer las operaciones básicas sobre la tabla Estudiantes y Acudientes
+-- Description:					Permite hacer las operaciones básicas sobre la tabla Estudiantes
 -- ==============================================================================================================================
 CREATE     PROCEDURE [dbo].[SP_CRUD_ESTUDIANTES]
 (
@@ -27,14 +27,9 @@ CREATE     PROCEDURE [dbo].[SP_CRUD_ESTUDIANTES]
 	@email_E						NVARCHAR(70) = NULL,
 	@direccion						NVARCHAR(70) = NULL,
 	@telefono_E						NVARCHAR(15) = NULL,
-	@curso							INT=NULL,
-	@primerNombre_A					NVARCHAR(15) = NULL,
-	@segundoNombre_A				NVARCHAR(15) = NULL,
-	@primerApellido_A				NVARCHAR(15) = NULL,
-	@segundoApelldio_A				NVARCHAR(15) = NULL,
-	@identificacion_A				NVARCHAR(12) = NULL,
-	@telefono_A						NVARCHAR(15) = NULL,
-	@email_A						NVARCHAR(70) = NULL
+	@acudiente						INT = NULL,
+	@curso							INT NULL
+)
 	AS
 BEGIN
     SET NOCOUNT ON;
@@ -44,40 +39,34 @@ BEGIN
 	IF @intProceso = 1
 		BEGIN
 			SELECT
-				[IDENTIFICACION],
-				[PRIMERNOMBRE],
-				[SEGUNDONOMBRE],
-				[PRIMERAPELLIDO],
-				[SEGUNDOAPELLIDO],
-				[TELEFONO],
-				[EMAIL],
-				[FECHANACIMIENTO],
+				E.[IDENTIFICACION],
+				E.[PRIMERNOMBRE],
+				E.[SEGUDONOMBRE] AS SEGUNDONOMBRE,
+				E.[PRIMERAPELLIDO],
+				E.[SEGUNDOAPELLIDO],
+				E.[TELEFONO],
+				E.[EMAIL],
+				E.[FECHANACIMIENTO],
 				-- Se calcula la edad del estudiante, inicialmente se calcula la diferencia entre los años
 				-- luego se verifica si el mes actual es menor al mes de nacimiento, en caso de que el mes sea el mismo
 				-- se valida si el dia actual es menor que el dia del nacimiento; si se cumple una de esas dos condicione, se resta 1 a la diferencia inicial
-				DATEDIFF(YEAR, [FECHANACIMIENTO], GETDATE()) - 
+				DATEDIFF(YEAR, E.[FECHANACIMIENTO], GETDATE()) - 
 				CASE 
-					WHEN MONTH(GETDATE()) < MONTH([FECHANACIMIENTO]) OR 
-						 (MONTH(GETDATE()) = MONTH([FECHANACIMIENTO]) AND DAY(GETDATE()) < DAY([FECHANACIMIENTO]))
+					WHEN MONTH(GETDATE()) < MONTH(E.[FECHANACIMIENTO]) OR 
+						 (MONTH(GETDATE()) = MONTH(E.[FECHANACIMIENTO]) AND DAY(GETDATE()) < DAY(E.[FECHANACIMIENTO]))
 					THEN 1 
 					ELSE 0 
 				END AS EDAD,
 				CONCAT(G.NOMBRE, '-', C.CODIGO) AS GRUPO,
-				[DIRECCION],
-				[A.IDENTIFICACION]		AS A_identificacion,
-				[A.PRIMERNOMBRE]		AS A_firsname,
-				[A.SEGUNDONOMBRE]		AS A_secondname,
-				[A.PRIMERAPELLIDO]		AS A_fLastname,
-				[A.SEGUNDOAPELLIDO]		AS A_sLastname,
-				[A.TELEFONO]			AS A_phone,
-				[A.EMAIL]				AS A_email,
-			FROM
+				A.[IDENTIFICACION]		AS A_identificacion,
+				A.[IDACUDIENTE]
+				FROM
 				[JulianHernandoDavid_NotasDB].[dbo].[ESTUDIANTES] E WITH (NOLOCK)
 				INNER JOIN CURSOS C ON C.IDCURSO = E.CURSO
 				INNER JOIN GRADOS G ON G.IDGRADO = C.GRADO
-				INNER JOIN ACUDIENTES A ON A.ESTUDIANTE= E.IDESTUDIANTE
+				INNER JOIN ACUDIENTES A ON A.IDACUDIENTE =  E.ACUDIENTE
 			WHERE
-				[IDENTIFICACION] = @identificacion_E;
+				E.[IDENTIFICACION] = @identificacion_E;
     END
 	--2 - INSERT PARA REGISTRAR UN ALUMNO Y LOS DATOS DE SU ACUDIENTE
     IF @intProceso = 2
@@ -106,7 +95,8 @@ BEGIN
 					,[DIRECCION]
 					,[TELEFONO]
 					,[CURSO]
-					,[EMAIL])
+					,[EMAIL],
+					[ACUDIENTE])
 				VALUES
 					(@primerNombre_E
 					,@segundoNombre_E
@@ -117,29 +107,8 @@ BEGIN
 					,@direccion
 					,@telefono_E
 					,@curso
-					,@email_E)
-
-				-- Obtenemos el id que se acaba de generar para luego usarlo al insertar los datos del acudiente
-			 SET @NewID = SCOPE_IDENTITY();
-
-			INSERT INTO [JulianHernandoDavid_NotasDB].[dbo].[ACUDIENTES]
-						([PRIMERNOMBRE]
-						,[SEGUDONOMBRE]
-						,[PRIMERAPELLIDO]
-						,[SEGUNDOAPELLIDO]
-						,[IDENTIFICACION]
-						,[TELEFONO]
-						,[EMAIL]
-						,[ESTUDIANTE])
-					VALUES
-						(@primerNombre_A
-						,@segundoNombre_A
-						,@primerApellido_A
-						,@segundoApellido_A
-						,@identificacion_A
-						,@telefono_A
-						,@email_A
-						,@NewId)
+					,@email_E
+					,@acudiente)
 
        COMMIT TRANSACTION 
     END
@@ -164,7 +133,7 @@ BEGIN
 			UPDATE [JulianHernandoDavid_NotasDB].[dbo].[ESTUDIANTES]
 			SET 
 				[PRIMERNOMBRE] = @primerNombre_E,
-				[SEGUNDONOMBRE] = @segundoNombre_E,
+				[SEGUDONOMBRE] = @segundoNombre_E,
 				[PRIMERAPELLIDO] = @primerApellido_E,
 				[SEGUNDOAPELLIDO] = @segundoApellido_E,
 				[FECHANACIMIENTO] = @fechaNacimiento_E,
@@ -173,20 +142,8 @@ BEGIN
 				[CURSO] = @curso,
 				[EMAIL] = @email_E
 			WHERE 
-				_IDESTUDIANTE = @idEstudiante;
-
-			-- Actualizar los datos del acudiente
-			UPDATE [JulianHernandoDavid_NotasDB].[dbo].[ACUDIENTES]
-			SET 
-				[PRIMERNOMBRE] = @primerNombre_A,
-				[SEGUNDONOMBRE] = @segundoNombre_A,
-				[PRIMERAPELLIDO] = @primerApellido_A,
-				[SEGUNDOAPELLIDO] = @segundoApellido_A,
-				[IDENTIFICACION] = @identificacion_A,
-				[TELEFONO] = @telefono_A,
-				[EMAIL] = @email_A
-			WHERE 
-				[ESTUDIANTE] = @idEstudiante;
+				IDESTUDIANTE = @idEstudiante;
+		
 		COMMIT TRANSACTION;
 
     END
