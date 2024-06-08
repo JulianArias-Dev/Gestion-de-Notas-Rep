@@ -42,7 +42,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -59,6 +59,9 @@
             this.btnModificarCliente = new System.Windows.Forms.Button();
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.btnRegistarCliente = new System.Windows.Forms.Button();
+            this.lblValTel = new System.Windows.Forms.Label();
+            this.lblVal = new System.Windows.Forms.Label();
+            this.lblValId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
@@ -84,7 +87,7 @@
             this.label13.Location = new System.Drawing.Point(32, 259);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(145, 18);
+            this.label13.Size = new System.Drawing.Size(129, 16);
             this.label13.TabIndex = 65;
             this.label13.Text = "Listado Docentes";
             // 
@@ -93,10 +96,10 @@
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.Font = new System.Drawing.Font("Lucida Fax", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(643, 217);
+            this.comboBox1.Location = new System.Drawing.Point(655, 217);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(201, 26);
+            this.comboBox1.Size = new System.Drawing.Size(201, 24);
             this.comboBox1.TabIndex = 115;
             // 
             // dateTimePicker1
@@ -104,12 +107,12 @@
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Fax", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(643, 112);
+            this.dateTimePicker1.Location = new System.Drawing.Point(655, 112);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(201, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(201, 24);
             this.dateTimePicker1.TabIndex = 114;
             // 
             // label12
@@ -117,10 +120,10 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(490, 220);
+            this.label12.Location = new System.Drawing.Point(514, 220);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 18);
+            this.label12.Size = new System.Drawing.Size(56, 16);
             this.label12.TabIndex = 113;
             this.label12.Text = "Cargo :";
             // 
@@ -128,10 +131,10 @@
             // 
             this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox7.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(643, 182);
+            this.textBox7.Location = new System.Drawing.Point(655, 182);
             this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(201, 25);
+            this.textBox7.Size = new System.Drawing.Size(201, 23);
             this.textBox7.TabIndex = 112;
             // 
             // label11
@@ -139,10 +142,10 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(490, 185);
+            this.label11.Location = new System.Drawing.Point(514, 185);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(109, 18);
+            this.label11.Size = new System.Drawing.Size(95, 16);
             this.label11.TabIndex = 111;
             this.label11.Text = "Contraseña :";
             // 
@@ -150,10 +153,10 @@
             // 
             this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox6.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(643, 147);
+            this.textBox6.Location = new System.Drawing.Point(655, 147);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(201, 25);
+            this.textBox6.Size = new System.Drawing.Size(201, 23);
             this.textBox6.TabIndex = 110;
             // 
             // label10
@@ -161,10 +164,10 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(490, 150);
+            this.label10.Location = new System.Drawing.Point(514, 150);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 18);
+            this.label10.Size = new System.Drawing.Size(69, 16);
             this.label10.TabIndex = 109;
             this.label10.Text = "Usuario :";
             // 
@@ -173,10 +176,10 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(490, 115);
+            this.label9.Location = new System.Drawing.Point(514, 115);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(162, 18);
+            this.label9.Size = new System.Drawing.Size(143, 16);
             this.label9.TabIndex = 108;
             this.label9.Text = "Fecha Nacimiento :";
             // 
@@ -184,10 +187,10 @@
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox4.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(643, 77);
+            this.textBox4.Location = new System.Drawing.Point(655, 77);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(201, 25);
+            this.textBox4.Size = new System.Drawing.Size(201, 23);
             this.textBox4.TabIndex = 107;
             // 
             // label8
@@ -195,10 +198,10 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(490, 80);
+            this.label8.Location = new System.Drawing.Point(514, 80);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 18);
+            this.label8.Size = new System.Drawing.Size(84, 16);
             this.label8.TabIndex = 106;
             this.label8.Text = "Dirección :";
             // 
@@ -206,33 +209,35 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(643, 42);
+            this.textBox1.Location = new System.Drawing.Point(655, 42);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 25);
+            this.textBox1.Size = new System.Drawing.Size(201, 23);
             this.textBox1.TabIndex = 105;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(490, 45);
+            this.label1.Location = new System.Drawing.Point(514, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 18);
+            this.label1.Size = new System.Drawing.Size(79, 16);
             this.label1.TabIndex = 104;
             this.label1.Text = "Teléfono :";
             // 
-            // textBox2
+            // txtCorreo
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(229, 217);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 25);
-            this.textBox2.TabIndex = 103;
+            this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCorreo.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Location = new System.Drawing.Point(229, 217);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(201, 23);
+            this.txtCorreo.TabIndex = 103;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // label4
             // 
@@ -242,7 +247,7 @@
             this.label4.Location = new System.Drawing.Point(58, 224);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(167, 18);
+            this.label4.Size = new System.Drawing.Size(148, 16);
             this.label4.TabIndex = 102;
             this.label4.Text = "Correo Electrónico :";
             // 
@@ -253,7 +258,7 @@
             this.textBox3.Location = new System.Drawing.Point(229, 182);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(201, 25);
+            this.textBox3.Size = new System.Drawing.Size(201, 23);
             this.textBox3.TabIndex = 101;
             // 
             // label7
@@ -264,7 +269,7 @@
             this.label7.Location = new System.Drawing.Point(58, 189);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(161, 18);
+            this.label7.Size = new System.Drawing.Size(139, 16);
             this.label7.TabIndex = 100;
             this.label7.Text = "Segundo Apellido :";
             // 
@@ -275,7 +280,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(229, 147);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(201, 25);
+            this.txtTelefono.Size = new System.Drawing.Size(201, 23);
             this.txtTelefono.TabIndex = 99;
             // 
             // label5
@@ -286,7 +291,7 @@
             this.label5.Location = new System.Drawing.Point(58, 154);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 18);
+            this.label5.Size = new System.Drawing.Size(126, 16);
             this.label5.TabIndex = 98;
             this.label5.Text = "Primer Apellido :";
             // 
@@ -297,7 +302,7 @@
             this.txtApellidos.Location = new System.Drawing.Point(229, 112);
             this.txtApellidos.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(201, 25);
+            this.txtApellidos.Size = new System.Drawing.Size(201, 23);
             this.txtApellidos.TabIndex = 97;
             // 
             // label6
@@ -308,7 +313,7 @@
             this.label6.Location = new System.Drawing.Point(58, 119);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(163, 18);
+            this.label6.Size = new System.Drawing.Size(140, 16);
             this.label6.TabIndex = 96;
             this.label6.Text = "Segundo Nombre : ";
             // 
@@ -319,7 +324,7 @@
             this.txtNombres.Location = new System.Drawing.Point(229, 77);
             this.txtNombres.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(201, 25);
+            this.txtNombres.Size = new System.Drawing.Size(201, 23);
             this.txtNombres.TabIndex = 95;
             // 
             // label3
@@ -330,7 +335,7 @@
             this.label3.Location = new System.Drawing.Point(58, 84);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 18);
+            this.label3.Size = new System.Drawing.Size(123, 16);
             this.label3.TabIndex = 94;
             this.label3.Text = "Primer Nombre :";
             // 
@@ -341,8 +346,9 @@
             this.txtIdentificacion.Location = new System.Drawing.Point(229, 42);
             this.txtIdentificacion.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(201, 25);
+            this.txtIdentificacion.Size = new System.Drawing.Size(201, 23);
             this.txtIdentificacion.TabIndex = 93;
+            this.txtIdentificacion.TextChanged += new System.EventHandler(this.txtIdentificacion_TextChanged);
             // 
             // label2
             // 
@@ -352,7 +358,7 @@
             this.label2.Location = new System.Drawing.Point(58, 49);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 18);
+            this.label2.Size = new System.Drawing.Size(115, 16);
             this.label2.TabIndex = 92;
             this.label2.Text = "Identificación :";
             // 
@@ -438,6 +444,49 @@
             this.btnRegistarCliente.TabIndex = 117;
             this.btnRegistarCliente.Text = "Registrar";
             this.btnRegistarCliente.UseVisualStyleBackColor = false;
+            this.btnRegistarCliente.Click += new System.EventHandler(this.btnRegistarCliente_Click);
+            // 
+            // lblValTel
+            // 
+            this.lblValTel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblValTel.AutoSize = true;
+            this.lblValTel.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValTel.ForeColor = System.Drawing.Color.Red;
+            this.lblValTel.Location = new System.Drawing.Point(860, 45);
+            this.lblValTel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblValTel.Name = "lblValTel";
+            this.lblValTel.Size = new System.Drawing.Size(65, 16);
+            this.lblValTel.TabIndex = 152;
+            this.lblValTel.Text = "Invalido";
+            this.lblValTel.Visible = false;
+            // 
+            // lblVal
+            // 
+            this.lblVal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVal.AutoSize = true;
+            this.lblVal.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVal.ForeColor = System.Drawing.Color.Red;
+            this.lblVal.Location = new System.Drawing.Point(434, 220);
+            this.lblVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblVal.Name = "lblVal";
+            this.lblVal.Size = new System.Drawing.Size(65, 16);
+            this.lblVal.TabIndex = 153;
+            this.lblVal.Text = "Invalido";
+            this.lblVal.Visible = false;
+            // 
+            // lblValId
+            // 
+            this.lblValId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblValId.AutoSize = true;
+            this.lblValId.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValId.ForeColor = System.Drawing.Color.Red;
+            this.lblValId.Location = new System.Drawing.Point(434, 45);
+            this.lblValId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblValId.Name = "lblValId";
+            this.lblValId.Size = new System.Drawing.Size(65, 16);
+            this.lblValId.TabIndex = 154;
+            this.lblValId.Text = "Invalido";
+            this.lblValId.Visible = false;
             // 
             // ControlDocentes
             // 
@@ -446,6 +495,9 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(960, 534);
+            this.Controls.Add(this.lblValId);
+            this.Controls.Add(this.lblVal);
+            this.Controls.Add(this.lblValTel);
             this.Controls.Add(this.btnEliminarCliente);
             this.Controls.Add(this.btnModificarCliente);
             this.Controls.Add(this.btnBuscarCliente);
@@ -463,7 +515,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label7);
@@ -504,7 +556,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
@@ -521,5 +573,8 @@
         private System.Windows.Forms.Button btnModificarCliente;
         private System.Windows.Forms.Button btnBuscarCliente;
         private System.Windows.Forms.Button btnRegistarCliente;
+        private System.Windows.Forms.Label lblValTel;
+        private System.Windows.Forms.Label lblVal;
+        private System.Windows.Forms.Label lblValId;
     }
 }

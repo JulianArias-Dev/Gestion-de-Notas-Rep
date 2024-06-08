@@ -12,9 +12,9 @@ using BLL;
 
 namespace Presentacion
 {
-    public partial class ControlAdministrativos : Form
+    public partial class ControlAcudiente : Form
     {
-        public ControlAdministrativos()
+        public ControlAcudiente()
         {
             InitializeComponent();
         }
@@ -24,9 +24,9 @@ namespace Presentacion
             this.Close();
         }
         
-        private void btnRegistarCliente_Click(object sender, EventArgs e)
+        private void btnRegistarAcudiente_Click(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void txtIdentificacion_TextChanged(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace Presentacion
             lblVal.Visible = Validaciones.ValCorreo(txtCorreo.Text) ? false : true;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
         {
             lblValTel.Visible = Validaciones.valTelefono(txtTelefono.Text) ? false : true;
         }

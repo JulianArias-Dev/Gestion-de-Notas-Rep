@@ -31,7 +31,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btnEliminarCliente = new System.Windows.Forms.Button();
             this.dgvCustomerList = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -44,6 +43,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnBuscarCliente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerList)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -58,7 +59,7 @@
             this.label13.Location = new System.Drawing.Point(34, 173);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(221, 18);
+            this.label13.Size = new System.Drawing.Size(194, 16);
             this.label13.TabIndex = 101;
             this.label13.Text = "Listado Estudiantes Curso:";
             // 
@@ -93,16 +94,6 @@
             this.dgvCustomerList.Size = new System.Drawing.Size(868, 257);
             this.dgvCustomerList.TabIndex = 96;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.Font = new System.Drawing.Font("Lucida Fax", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(260, 173);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 25);
-            this.comboBox1.TabIndex = 112;
-            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -113,9 +104,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnRegistarCliente);
             this.groupBox1.Font = new System.Drawing.Font("Lucida Fax", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(173, 46);
+            this.groupBox1.Location = new System.Drawing.Point(134, 46);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(558, 114);
+            this.groupBox1.Size = new System.Drawing.Size(699, 114);
             this.groupBox1.TabIndex = 114;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Curso";
@@ -130,7 +121,7 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(48)))), ((int)(((byte)(24)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(429, 62);
+            this.button2.Location = new System.Drawing.Point(518, 41);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 30);
@@ -142,19 +133,19 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Lucida Fax", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(248, 30);
+            this.comboBox2.Location = new System.Drawing.Point(176, 32);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 25);
+            this.comboBox2.Size = new System.Drawing.Size(158, 24);
             this.comboBox2.TabIndex = 118;
             // 
             // txtNombres
             // 
             this.txtNombres.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombres.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.Location = new System.Drawing.Point(184, 59);
+            this.txtNombres.Location = new System.Drawing.Point(176, 61);
             this.txtNombres.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(185, 25);
+            this.txtNombres.Size = new System.Drawing.Size(158, 23);
             this.txtNombres.TabIndex = 117;
             // 
             // label3
@@ -162,10 +153,10 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 62);
+            this.label3.Location = new System.Drawing.Point(12, 64);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 18);
+            this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 116;
             this.label3.Text = "Curso:";
             // 
@@ -174,10 +165,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 30);
+            this.label2.Location = new System.Drawing.Point(13, 32);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 18);
+            this.label2.Size = new System.Drawing.Size(150, 16);
             this.label2.TabIndex = 115;
             this.label2.Text = "Seleccione el Grado:";
             // 
@@ -191,7 +182,7 @@
             this.btnRegistarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(254)))), ((int)(((byte)(21)))));
             this.btnRegistarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegistarCliente.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistarCliente.Location = new System.Drawing.Point(429, 25);
+            this.btnRegistarCliente.Location = new System.Drawing.Point(380, 41);
             this.btnRegistarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistarCliente.Name = "btnRegistarCliente";
             this.btnRegistarCliente.Size = new System.Drawing.Size(115, 30);
@@ -221,7 +212,7 @@
             this.textBox1.Location = new System.Drawing.Point(138, 29);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 25);
+            this.textBox1.Size = new System.Drawing.Size(185, 23);
             this.textBox1.TabIndex = 119;
             // 
             // label4
@@ -232,7 +223,7 @@
             this.label4.Location = new System.Drawing.Point(13, 32);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 18);
+            this.label4.Size = new System.Drawing.Size(107, 16);
             this.label4.TabIndex = 115;
             this.label4.Text = "Identificacion";
             // 
@@ -267,16 +258,45 @@
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(232, 173);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(146, 23);
+            this.textBox2.TabIndex = 120;
+            // 
+            // btnBuscarCliente
+            // 
+            this.btnBuscarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBuscarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+            this.btnBuscarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscarCliente.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnBuscarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+            this.btnBuscarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+            this.btnBuscarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscarCliente.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarCliente.Location = new System.Drawing.Point(393, 169);
+            this.btnBuscarCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.Size = new System.Drawing.Size(75, 30);
+            this.btnBuscarCliente.TabIndex = 121;
+            this.btnBuscarCliente.Text = "Buscar";
+            this.btnBuscarCliente.UseVisualStyleBackColor = false;
+            // 
             // ControlCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(960, 595);
+            this.ClientSize = new System.Drawing.Size(962, 595);
+            this.Controls.Add(this.btnBuscarCliente);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.dgvCustomerList);
             this.MinimumSize = new System.Drawing.Size(978, 578);
@@ -298,7 +318,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnEliminarCliente;
         private System.Windows.Forms.DataGridView dgvCustomerList;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox txtNombres;
@@ -311,5 +330,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnBuscarCliente;
     }
 }
