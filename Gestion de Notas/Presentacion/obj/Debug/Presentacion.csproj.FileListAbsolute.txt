@@ -18,7 +18,6 @@ C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Presentaci
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Presentacion.pdb
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.AsignacionEspecialidades.resources
-C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.AsignacionMaterias.resources
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlAdministrativos.resources
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlDocentes.resources
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlEstudiante.resources
@@ -36,3 +35,8 @@ C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.Con
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlMateriasA.resources
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlAcudiente.resources
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlGestionAcademica.resources
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlAcudiente.resources
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlCursos.resources
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlMateriasA.resources
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.ControlGestionAcademica.resources
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.GestionNotas.resources
