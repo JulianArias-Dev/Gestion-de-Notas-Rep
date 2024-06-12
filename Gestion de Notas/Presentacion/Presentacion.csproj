@@ -212,6 +212,10 @@
       <Project>{551eafa5-60d1-49d0-a73d-517a5152fd99}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{6633258b-795f-48dd-9e30-15861891cf12}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
