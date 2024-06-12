@@ -67,7 +67,7 @@ BEGIN
 				INNER JOIN ACUDIENTES A ON A.IDACUDIENTE =  E.ACUDIENTE
 			WHERE
 				E.[IDENTIFICACION] = @identificacion_E;
-    END
+		END
 	--2 - INSERT PARA REGISTRAR UN ALUMNO Y LOS DATOS DE SU ACUDIENTE
     IF @intProceso = 2
     BEGIN 
@@ -150,9 +150,10 @@ BEGIN
 	--4 - DELETE
 	IF @intProceso = 4
     BEGIN
-		DELETE FROM [Admin_NotasDB].[dbo].[CD_Periodos]
-        WHERE ([Id] = @intId);
+		DELETE FROM [JulianHernandoDavid_NotasDB].[dbo].[ESTUDIANTES]
+        WHERE (IDESTUDIANTE = @idEstudiante);
     END
 END
 GO
 
+	
