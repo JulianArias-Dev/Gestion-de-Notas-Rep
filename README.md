@@ -65,11 +65,21 @@ A grandes rasgos, el objetivo de este proyecto es desarrollar una aplicación de
 - **RF25:** Búsqueda de docente por nombre y/o ID.
 
 ## Actualizaciones
-Julian Arias - David Payares - Hernando Diaz
+### Integrantes 
+  
+  - Julian Arias
+  - David Payares 
+  - Hernando Diaz
 
 ### 25/05/2024
-A dia de hoy se ha subido el srcipt de la creación de las tablas en la base de datos
+  - A dia de hoy se ha subido el srcipt de la creación de las tablas en la base de datos
 
 ### 03/06/2024
-A día de hoy se ha trabajado en el diseño de la GUI
+  - A día de hoy se ha trabajado en el diseño de la GUI
 
+### 11-06-2024
+  - A día de hoy se ha trabajado en la presentacion
+  - Se creó la capa ENTITY
+  - Se creó la capa BLL
+  - Se creó la capa DAL
+  - Se publicaron los dos primeros procedimientos almacenados en version preliminar
