@@ -83,3 +83,6 @@ A grandes rasgos, el objetivo de este proyecto es desarrollar una aplicación de
   - Se creó la capa BLL
   - Se creó la capa DAL
   - Se publicaron los dos primeros procedimientos almacenados en version preliminar
+
+### 16/06/2024
+- A dia de hoy se terminó una primera fase del control de datos de acudientes y se hizo un pimer acercamiento al control de correos electronicos 
