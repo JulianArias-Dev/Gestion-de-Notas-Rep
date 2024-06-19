@@ -56,3 +56,7 @@ C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Entity.pdb
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\DAL.pdb
 C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.FormControlEspecialidades.resources
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.FormControlEspecialidades.resources
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\itextsharp.dll
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\itextsharp.xml
+C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\BouncyCastle.Cryptography.xml

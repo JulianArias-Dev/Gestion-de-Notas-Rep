@@ -1,7 +1,11 @@
 ﻿using Entity;
+using iTextSharp.text;
 using System;
 using System.Net.Mail;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using System.Collections.Generic;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace BLL
 {
@@ -121,6 +125,88 @@ namespace BLL
                 smtpClient.EnableSsl = true;
 
                 // Send the email
+                smtpClient.Send(myMail);
+
+                Console.WriteLine("Email sent successfully.");
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Invalid email format: " + ex.Message);
+            }
+            catch (SmtpException ex)
+            {
+                Console.WriteLine("SMTP error: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+        }
+
+        public static void EnviarNotas(Estudiante estudiante, List<Nota> notas)
+        {
+            try
+            {
+                string email = estudiante.Email;
+                string name = $"{estudiante.PrimerNombre} {estudiante.SegundoNombre} {estudiante.PrimerApellido} {estudiante.SegundoApellido}";
+
+                string asunto = "Notas del Estudiante";
+                string notificacion = "Por favor, vea el archivo adjunto para las notas detalladas.";
+
+                string from = "ismibyhmdh@gmail.com";
+                string to = email;
+                string subject = asunto;
+                string body = "Estimado(a) " + name + ",<br><br>" + notificacion;
+
+                // Crear un archivo PDF temporal
+                string tempFilePath = Path.GetTempFileName() + ".pdf";
+                using (FileStream stream = new FileStream(tempFilePath, FileMode.Create))
+                {
+                    Document document = new Document();
+                    PdfWriter.GetInstance(document, stream);
+                    document.Open();
+
+                    document.Add(new Paragraph("Reporte de Notas"));
+                    document.Add(new Paragraph("Nombre: " + name));
+                    document.Add(new Paragraph("Email: " + email));
+                    document.Add(new Paragraph(""));
+                    document.Add(new Paragraph(" s"));
+
+                    PdfPTable table = new PdfPTable(2);
+                    table.AddCell("Asignatura");
+                    table.AddCell("Nota");
+
+                    //foreach (var nota in notas)
+                    //{
+                    //    table.AddCell(nota.Key);
+                    //    table.AddCell(nota.Value);
+                    //}
+
+                    document.Add(table);
+                    document.Close();
+                }
+
+                // Crear un objeto MailMessage
+                MailMessage myMail = new MailMessage();
+                myMail.From = new MailAddress(from);
+                myMail.To.Add(new MailAddress(to));
+                myMail.Subject = subject;
+                myMail.Body = body;
+                myMail.IsBodyHtml = true;
+
+                // Agregar el archivo adjunto
+                if (File.Exists(tempFilePath))
+                {
+                    Attachment attachment = new Attachment(tempFilePath);
+                    myMail.Attachments.Add(attachment);
+                }
+
+                // Configurar el cliente SMTP
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+                smtpClient.Credentials = new System.Net.NetworkCredential("ismibyhmdh@gmail.com", "sudwvicyrselxuca");
+                smtpClient.EnableSsl = true;
+
+                // Enviar el correo electrónico
                 smtpClient.Send(myMail);
 
                 Console.WriteLine("Email sent successfully.");
