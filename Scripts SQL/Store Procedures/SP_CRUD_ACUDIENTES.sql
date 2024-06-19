@@ -73,6 +73,14 @@ BEGIN
 		FROM [JulianHernandoDavid_NotasDB].[dbo].[ACUDIENTES] WITH(NOLOCK)
 		WHERE [IDENTIFICACION] = @identificacion_A;
 
+		SELECT TOP 1 @intRegistros = 1
+		FROM [JulianHernandoDavid_NotasDB].[dbo].[ESTUDIANTES] WITH(NOLOCK)
+		WHERE [IDENTIFICACION] = @identificacion_A;
+
+		SELECT TOP 1 @intRegistros = 1
+		FROM [JulianHernandoDavid_NotasDB].[dbo].[DOCENTES] WITH(NOLOCK)
+		WHERE [IDENTIFICACION] = @identificacion_A;
+
 		IF @intRegistros = 1
 		BEGIN
 			SET @codigoError = 301 -- Código de error para identificación duplicada
@@ -82,6 +90,10 @@ BEGIN
 		-- Validar duplicación de correo electrónico
 		SELECT TOP 1 @intRegistros = 1
 		FROM [JulianHernandoDavid_NotasDB].[dbo].[ACUDIENTES] WITH(NOLOCK)
+		WHERE [EMAIL] = @email_A;
+
+		SELECT TOP 1 @intRegistros = 1
+		FROM [JulianHernandoDavid_NotasDB].[dbo].[DOCENTES] WITH(NOLOCK)
 		WHERE [EMAIL] = @email_A;
 
 		IF @intRegistros = 1
@@ -95,6 +107,10 @@ BEGIN
 		FROM [JulianHernandoDavid_NotasDB].[dbo].[ACUDIENTES] WITH(NOLOCK)
 		WHERE [TELEFONO] = @telefono_A;
 
+		SELECT TOP 1 @intRegistros = 1
+		FROM [JulianHernandoDavid_NotasDB].[dbo].[DOCENTES] WITH(NOLOCK)
+		WHERE [TELEFONO] = @telefono_A;
+		
 		IF @intRegistros = 1
 		BEGIN
             SET @codigoError = 303 -- Código de error para teléfono duplicado
@@ -149,6 +165,14 @@ BEGIN
 		FROM [JulianHernandoDavid_NotasDB].[dbo].[ACUDIENTES] WITH(NOLOCK)
 		WHERE [IDENTIFICACION] = @identificacion_A AND [IDACUDIENTE] != @idAcudiente;
 
+		SELECT TOP 1 @intRegistros = 1
+		FROM [JulianHernandoDavid_NotasDB].[dbo].[ESTUDIANTES] WITH(NOLOCK)
+		WHERE [IDENTIFICACION] = @identificacion_A;
+
+		SELECT TOP 1 @intRegistros = 1
+		FROM [JulianHernandoDavid_NotasDB].[dbo].[DOCENTES] WITH(NOLOCK)
+		WHERE [IDENTIFICACION] = @identificacion_A;
+
 		IF @intRegistros = 1
 		BEGIN
 			SET @codigoError = 301 -- Código de error para identificación duplicada
@@ -160,6 +184,10 @@ BEGIN
 		FROM [JulianHernandoDavid_NotasDB].[dbo].[ACUDIENTES] WITH(NOLOCK)
 		WHERE [EMAIL] = @email_A AND [IDACUDIENTE] != @idAcudiente;
 
+		SELECT TOP 1 @intRegistros = 1
+		FROM [JulianHernandoDavid_NotasDB].[dbo].[DOCENTES] WITH(NOLOCK)
+		WHERE [EMAIL] = @email_A;
+
 		IF @intRegistros = 1
 		BEGIN
 			SET @codigoError = 302 -- Código de error para correo electrónico duplicado
@@ -170,6 +198,10 @@ BEGIN
 		SELECT TOP 1 @intRegistros = 1
 		FROM [JulianHernandoDavid_NotasDB].[dbo].[ACUDIENTES] WITH(NOLOCK)
 		WHERE [TELEFONO] = @telefono_A AND [IDACUDIENTE] != @idAcudiente;
+
+		SELECT TOP 1 @intRegistros = 1
+		FROM [JulianHernandoDavid_NotasDB].[dbo].[DOCENTES] WITH(NOLOCK)
+		WHERE [TELEFONO] = @telefono_A;
 
 		IF @intRegistros = 1
 		BEGIN
