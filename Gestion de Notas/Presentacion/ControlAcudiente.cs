@@ -62,6 +62,7 @@ namespace Presentacion
                 if (!mss.Contains("Error"))
                 {
                     limpiarCampos();
+                    cargarDvg();
                 }
             }
             else if (result == DialogResult.No)
@@ -88,6 +89,7 @@ namespace Presentacion
                 if (!mss.Contains("Error"))
                 {
                     limpiarCampos();
+                    cargarDvg();
                 }
             }
             else if (result == DialogResult.No)
@@ -147,6 +149,7 @@ namespace Presentacion
                 if (!mss.Contains("Error"))
                 {
                     limpiarCampos();
+                    cargarDvg();
                 }
             }
             else if (result == DialogResult.No)
@@ -262,11 +265,18 @@ namespace Presentacion
 
         private void ControlAcudiente_Load(object sender, EventArgs e)
         {
+            cargarDvg();
+        }
+
+        private void cargarDvg()
+        {
             DataTable table = AcudientesService.ListaAcudientes();
 
             if (table!=null)
             {
+                dgvAcudientesList.Rows.Clear();
                 dgvAcudientesList.DataSource = table;
+                dgvAcudientesList.Refresh();
             }
         }
     }

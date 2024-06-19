@@ -59,11 +59,11 @@ namespace BLL
                 case 236:
                     return $"Error {code}: Los datos del acudiente no se pueden Eliminar porque hay estudiantes asociados al mismo.";
                 case 301:
-                    return $"Error {code}: Identificación duplicada, ya hay un acudiente con una identificación similar.";
+                    return $"Error {code}: Identificación duplicada. Ya se encuentra en uso una identificación similar.";
                 case 302:
-                    return $"Error {code}: Correo electrónico duplicado, ya hay un acudiente con una direccion de correo electronico similar.";
+                    return $"Error {code}: Correo electrónico duplicado. Ya se encuentra en uso una direccion de correo electronico similar.";
                 case 303:
-                    return $"Error {code}: Teléfono duplicado, ya hay un acudiente con un numero de telefono similar.";
+                    return $"Error {code}: Teléfono duplicado. Ya se encuentra en uso un numero de telefono similar.";
                 case 201:
                     SendMails.EnviarNotificacion(parametros, 2);
                     return $"Se han registrado exitosamente los datos del acudiente";

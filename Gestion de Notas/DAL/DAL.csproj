@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcudientesDB.cs" />
+    <Compile Include="CursosDB.cs" />
     <Compile Include="EstudiantesDB.cs" />
+    <Compile Include="GradosDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
