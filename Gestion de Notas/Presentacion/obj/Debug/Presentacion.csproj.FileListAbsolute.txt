@@ -50,3 +50,8 @@ C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Entity.dll
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Entity.pdb
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\DAL.dll
 C:\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\DAL.pdb
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Entity.dll
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\DAL.dll
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\Entity.pdb
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\bin\Debug\DAL.pdb
+C:\DATOS\Gestion-de-Notas-Rep\Gestion de Notas\Presentacion\obj\Debug\Presentacion.FormControlEspecialidades.resources

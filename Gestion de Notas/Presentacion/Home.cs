@@ -102,11 +102,6 @@ namespace Presentacion
             openChildForm(children);
         }
 
-        private void asignarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void asignarToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             var children = new AsignacionEspecialidades();
@@ -122,6 +117,12 @@ namespace Presentacion
         private void registrarToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             var children = new ControlDocentes();
+            openChildForm(children);
+        }
+
+        private void controlDeEspecialidadesTSM_Click(object sender, EventArgs e)
+        {
+            var children = new FormControlEspecialidades();
             openChildForm(children);
         }
     }
