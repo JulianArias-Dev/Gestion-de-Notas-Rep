@@ -241,9 +241,9 @@ namespace Presentacion
                 txtCurso.Focus();
                 return null;
             }
-            else if (string.IsNullOrEmpty(txtIdentificacion.Text))
+            else if (string.IsNullOrEmpty(txtIdentificacion.Text) || lblValId.Visible)
             {
-                MessageBox.Show("El campo de identificacion no puede estar vacío");
+                MessageBox.Show("El campo de identificacion no puede estar vacío o contener datos invalidos");
                 txtIdentificacion.Focus();
                 return null;
             }
@@ -265,9 +265,9 @@ namespace Presentacion
                 txtSApellido.Focus();
                 return null;
             }
-            else if (string.IsNullOrEmpty(txtCorreo.Text))
+            else if (string.IsNullOrEmpty(txtCorreo.Text) || lblVal.Visible)
             {
-                MessageBox.Show("El campo de Correo Electrónico no puede estar vacío");
+                MessageBox.Show("El campo de Correo Electrónico no puede estar vacío o contener datos invalidos");
                 txtCorreo.Focus();
                 return null;
             }
@@ -277,15 +277,9 @@ namespace Presentacion
                 txtDireccion.Focus();
                 return null;
             }
-            else if (string.IsNullOrEmpty(txtTelefono.Text))
+            else if (string.IsNullOrEmpty(txtTelefono.Text) || lblValTel.Visible)
             {
-                MessageBox.Show("El campo de Teléfono no puede estar vacío");
-                txtTelefono.Focus();
-                return null;
-            }
-            else if (string.IsNullOrEmpty(txtTelefono.Text))
-            {
-                MessageBox.Show("El campo de Teléfono no puede estar vacío");
+                MessageBox.Show("El campo de Teléfono no puede estar vacío o contener datos invalidos");
                 txtTelefono.Focus();
                 return null;
             }
@@ -365,7 +359,6 @@ namespace Presentacion
 
             if (table!=null)
             {
-                dgvStudentList.Rows.Clear();
                 dgvStudentList.DataSource = table;
                 dgvStudentList.Refresh();
             }
