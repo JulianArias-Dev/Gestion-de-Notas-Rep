@@ -266,12 +266,15 @@
             // 
             // dgvAcudientesList
             // 
+            this.dgvAcudientesList.AllowUserToAddRows = false;
+            this.dgvAcudientesList.AllowUserToDeleteRows = false;
             this.dgvAcudientesList.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvAcudientesList.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvAcudientesList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAcudientesList.Location = new System.Drawing.Point(23, 265);
             this.dgvAcudientesList.Margin = new System.Windows.Forms.Padding(2);
             this.dgvAcudientesList.Name = "dgvAcudientesList";
+            this.dgvAcudientesList.ReadOnly = true;
             this.dgvAcudientesList.RowHeadersWidth = 62;
             this.dgvAcudientesList.RowTemplate.Height = 28;
             this.dgvAcudientesList.Size = new System.Drawing.Size(784, 257);
