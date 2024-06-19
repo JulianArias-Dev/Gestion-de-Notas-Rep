@@ -46,6 +46,9 @@
             this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearCursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.periodosAcademicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionEspecialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controlDeEspecialidadesTSM = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionDeEspecialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fatherPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
@@ -61,7 +64,8 @@
             this.opcion1ToolStripMenuItem,
             this.gestionDeNotasToolStripMenuItem,
             this.cursosToolStripMenuItem,
-            this.periodosAcademicosToolStripMenuItem});
+            this.periodosAcademicosToolStripMenuItem,
+            this.gestionEspecialidadesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -119,14 +123,14 @@
             // registrarToolStripMenuItem
             // 
             this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
             this.registrarToolStripMenuItem.Text = "Registrar";
             this.registrarToolStripMenuItem.Click += new System.EventHandler(this.registrarToolStripMenuItem_Click_1);
             // 
             // asignarToolStripMenuItem
             // 
             this.asignarToolStripMenuItem.Name = "asignarToolStripMenuItem";
-            this.asignarToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.asignarToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
             this.asignarToolStripMenuItem.Text = "Asignar";
             this.asignarToolStripMenuItem.Click += new System.EventHandler(this.asignarToolStripMenuItem_Click_1);
             // 
@@ -194,6 +198,28 @@
             this.periodosAcademicosToolStripMenuItem.Size = new System.Drawing.Size(169, 25);
             this.periodosAcademicosToolStripMenuItem.Text = "Periodos Academicos";
             // 
+            // gestionEspecialidadesToolStripMenuItem
+            // 
+            this.gestionEspecialidadesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.controlDeEspecialidadesTSM,
+            this.asignacionDeEspecialidadesToolStripMenuItem});
+            this.gestionEspecialidadesToolStripMenuItem.Name = "gestionEspecialidadesToolStripMenuItem";
+            this.gestionEspecialidadesToolStripMenuItem.Size = new System.Drawing.Size(179, 25);
+            this.gestionEspecialidadesToolStripMenuItem.Text = "Gestion Especialidades";
+            // 
+            // controlDeEspecialidadesTSM
+            // 
+            this.controlDeEspecialidadesTSM.Name = "controlDeEspecialidadesTSM";
+            this.controlDeEspecialidadesTSM.Size = new System.Drawing.Size(281, 26);
+            this.controlDeEspecialidadesTSM.Text = "Control de Especialidades";
+            this.controlDeEspecialidadesTSM.Click += new System.EventHandler(this.controlDeEspecialidadesTSM_Click);
+            // 
+            // asignacionDeEspecialidadesToolStripMenuItem
+            // 
+            this.asignacionDeEspecialidadesToolStripMenuItem.Name = "asignacionDeEspecialidadesToolStripMenuItem";
+            this.asignacionDeEspecialidadesToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.asignacionDeEspecialidadesToolStripMenuItem.Text = "Asignacion de Especialidades";
+            // 
             // fatherPanel
             // 
             this.fatherPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -204,7 +230,7 @@
             this.fatherPanel.Location = new System.Drawing.Point(0, 29);
             this.fatherPanel.Margin = new System.Windows.Forms.Padding(2);
             this.fatherPanel.Name = "fatherPanel";
-            this.fatherPanel.Size = new System.Drawing.Size(1332, 727);
+            this.fatherPanel.Size = new System.Drawing.Size(1332, 720);
             this.fatherPanel.TabIndex = 1;
             // 
             // label1
@@ -214,7 +240,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 47.78181F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label1.Location = new System.Drawing.Point(5, 614);
+            this.label1.Location = new System.Drawing.Point(5, 607);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1159, 65);
             this.label1.TabIndex = 0;
@@ -224,7 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1332, 756);
+            this.ClientSize = new System.Drawing.Size(1332, 749);
             this.Controls.Add(this.fatherPanel);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -263,5 +289,8 @@
         private System.Windows.Forms.ToolStripMenuItem asignarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem periodosAcademicosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionAcademicaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionEspecialidadesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controlDeEspecialidadesTSM;
+        private System.Windows.Forms.ToolStripMenuItem asignacionDeEspecialidadesToolStripMenuItem;
     }
 }

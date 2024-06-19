@@ -78,6 +78,12 @@
     <Compile Include="ControlDocentes.Designer.cs">
       <DependentUpon>ControlDocentes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlEspecialidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlEspecialidades.Designer.cs">
+      <DependentUpon>ControlEspecialidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ControlDocentes.resx">
       <DependentUpon>ControlDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlEspecialidades.resx">
+      <DependentUpon>ControlEspecialidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlEstudiante.resx">
       <DependentUpon>ControlEstudiante.cs</DependentUpon>
