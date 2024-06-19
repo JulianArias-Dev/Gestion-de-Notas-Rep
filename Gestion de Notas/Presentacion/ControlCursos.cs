@@ -181,7 +181,6 @@ namespace Presentacion
 
             if (table!=null)
             {
-                dgvStudentList.Rows.Clear();
                 dgvStudentList.DataSource=table;
                 dgvStudentList.Refresh();
             }
