@@ -19,6 +19,8 @@ namespace Entity
         public string Direccion { get; set; }
         public string Telefono { get; set; }
         public int Usuario { get; set; }
+        public string email { get; set; }
+        public int Edad { get; set; }
         public List<Especialidad> Especializaciones { get; set; }
     }
 }

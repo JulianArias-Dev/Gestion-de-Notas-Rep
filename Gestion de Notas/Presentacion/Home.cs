@@ -51,7 +51,10 @@ namespace Presentacion
 
         private void gestionarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             var children = new GestionNotas();
+            openChildForm(children);
+                
         }
         private void personalTSM_Click(object sender, EventArgs e)
         {
@@ -122,6 +125,13 @@ namespace Presentacion
         private void registrarToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             var children = new ControlDocentes();
+            openChildForm(children);
+        }
+        
+
+        private void periodosAcademicosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var children = new PeriodosAcademicos();
             openChildForm(children);
         }
     }

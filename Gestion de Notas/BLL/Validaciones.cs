@@ -54,24 +54,24 @@ namespace BLL
 
         public static bool ValIdentificacion(string ComprobarIdentificacion)
         {
-            string idformato;
-            idformato = @"^106\d{7}$";
-            if (Regex.IsMatch(ComprobarIdentificacion, idformato))
-            {
-                if (Regex.Replace(ComprobarIdentificacion, idformato, string.Empty).Length == 0)
+                string[] patrones = new string[]
                 {
-                    return true;
-                }
-                else
-                {
-                    return false;
+                    @"^\d{8,10}$",                  // Cédula de Ciudadanía (8 a 10 dígitos)
+                    @"^[EP]-\d{6,9}$",              // Cédula de Extranjería (ej. E-1234567, P-123456789)
+                    @"^[A-Z0-9]{9}$",               // Pasaporte (9 caracteres alfanuméricos)
 
+                };
+
+                foreach (var pattern in patrones)
+                {
+                    if (Regex.IsMatch(ComprobarIdentificacion, pattern))
+                    {
+                        return true;
+                    }
                 }
-            }
-            else
-            {
+
                 return false;
-            }
         }
     }
+    
 }

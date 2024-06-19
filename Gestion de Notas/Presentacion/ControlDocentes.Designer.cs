@@ -28,33 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvCustomerList = new System.Windows.Forms.DataGridView();
+            this.dgvDocentes = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.CBcargo = new System.Windows.Forms.ComboBox();
+            this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSApellido = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtPApellido = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtSNombre = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.txtPNombres = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.PictureBox();
             this.btnEliminarCliente = new System.Windows.Forms.Button();
             this.btnModificarCliente = new System.Windows.Forms.Button();
             this.btnBuscarCliente = new System.Windows.Forms.Button();
@@ -62,22 +61,24 @@
             this.lblValTel = new System.Windows.Forms.Label();
             this.lblVal = new System.Windows.Forms.Label();
             this.lblValId = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerList)).BeginInit();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            this.lblEdad = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDocentes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvCustomerList
+            // dgvDocentes
             // 
-            this.dgvCustomerList.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvCustomerList.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvCustomerList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomerList.Location = new System.Drawing.Point(35, 291);
-            this.dgvCustomerList.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvCustomerList.Name = "dgvCustomerList";
-            this.dgvCustomerList.RowHeadersWidth = 62;
-            this.dgvCustomerList.RowTemplate.Height = 28;
-            this.dgvCustomerList.Size = new System.Drawing.Size(756, 233);
-            this.dgvCustomerList.TabIndex = 45;
+            this.dgvDocentes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvDocentes.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvDocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDocentes.Location = new System.Drawing.Point(35, 291);
+            this.dgvDocentes.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvDocentes.Name = "dgvDocentes";
+            this.dgvDocentes.RowHeadersWidth = 62;
+            this.dgvDocentes.RowTemplate.Height = 28;
+            this.dgvDocentes.Size = new System.Drawing.Size(756, 233);
+            this.dgvDocentes.TabIndex = 45;
             // 
             // label13
             // 
@@ -91,29 +92,29 @@
             this.label13.TabIndex = 65;
             this.label13.Text = "Listado Docentes";
             // 
-            // comboBox1
+            // CBcargo
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.Font = new System.Drawing.Font("Lucida Fax", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(655, 217);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(201, 24);
-            this.comboBox1.TabIndex = 115;
+            this.CBcargo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CBcargo.Font = new System.Drawing.Font("Lucida Fax", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBcargo.FormattingEnabled = true;
+            this.CBcargo.Location = new System.Drawing.Point(655, 217);
+            this.CBcargo.Margin = new System.Windows.Forms.Padding(2);
+            this.CBcargo.Name = "CBcargo";
+            this.CBcargo.Size = new System.Drawing.Size(201, 24);
+            this.CBcargo.TabIndex = 115;
             // 
-            // dateTimePicker1
+            // dtFecha
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Fax", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(655, 112);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(201, 24);
-            this.dateTimePicker1.TabIndex = 114;
+            this.dtFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtFecha.Font = new System.Drawing.Font("Lucida Fax", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFecha.Location = new System.Drawing.Point(655, 112);
+            this.dtFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.dtFecha.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
+            this.dtFecha.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtFecha.Name = "dtFecha";
+            this.dtFecha.Size = new System.Drawing.Size(201, 24);
+            this.dtFecha.TabIndex = 114;
             // 
             // label12
             // 
@@ -127,15 +128,15 @@
             this.label12.TabIndex = 113;
             this.label12.Text = "Cargo :";
             // 
-            // textBox7
+            // txtContraseña
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox7.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(655, 182);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(201, 23);
-            this.textBox7.TabIndex = 112;
+            this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtContraseña.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(655, 182);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(201, 23);
+            this.txtContraseña.TabIndex = 112;
             // 
             // label11
             // 
@@ -149,15 +150,15 @@
             this.label11.TabIndex = 111;
             this.label11.Text = "Contraseña :";
             // 
-            // textBox6
+            // txtUsuario
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(655, 147);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(201, 23);
-            this.textBox6.TabIndex = 110;
+            this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUsuario.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(655, 147);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(201, 23);
+            this.txtUsuario.TabIndex = 110;
             // 
             // label10
             // 
@@ -183,15 +184,15 @@
             this.label9.TabIndex = 108;
             this.label9.Text = "Fecha Nacimiento :";
             // 
-            // textBox4
+            // txtDireccion
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(655, 77);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(201, 23);
-            this.textBox4.TabIndex = 107;
+            this.txtDireccion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDireccion.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.Location = new System.Drawing.Point(655, 77);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(201, 23);
+            this.txtDireccion.TabIndex = 107;
             // 
             // label8
             // 
@@ -205,16 +206,16 @@
             this.label8.TabIndex = 106;
             this.label8.Text = "Dirección :";
             // 
-            // textBox1
+            // txtTelefono
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(655, 42);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 23);
-            this.textBox1.TabIndex = 105;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTelefono.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Location = new System.Drawing.Point(655, 42);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(201, 23);
+            this.txtTelefono.TabIndex = 105;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -251,15 +252,15 @@
             this.label4.TabIndex = 102;
             this.label4.Text = "Correo Electrónico :";
             // 
-            // textBox3
+            // txtSApellido
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(229, 182);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(201, 23);
-            this.textBox3.TabIndex = 101;
+            this.txtSApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSApellido.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSApellido.Location = new System.Drawing.Point(229, 182);
+            this.txtSApellido.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSApellido.Name = "txtSApellido";
+            this.txtSApellido.Size = new System.Drawing.Size(201, 23);
+            this.txtSApellido.TabIndex = 101;
             // 
             // label7
             // 
@@ -273,15 +274,15 @@
             this.label7.TabIndex = 100;
             this.label7.Text = "Segundo Apellido :";
             // 
-            // txtTelefono
+            // txtPApellido
             // 
-            this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTelefono.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(229, 147);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(201, 23);
-            this.txtTelefono.TabIndex = 99;
+            this.txtPApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPApellido.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPApellido.Location = new System.Drawing.Point(229, 147);
+            this.txtPApellido.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPApellido.Name = "txtPApellido";
+            this.txtPApellido.Size = new System.Drawing.Size(201, 23);
+            this.txtPApellido.TabIndex = 99;
             // 
             // label5
             // 
@@ -295,15 +296,15 @@
             this.label5.TabIndex = 98;
             this.label5.Text = "Primer Apellido :";
             // 
-            // txtApellidos
+            // txtSNombre
             // 
-            this.txtApellidos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtApellidos.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.Location = new System.Drawing.Point(229, 112);
-            this.txtApellidos.Margin = new System.Windows.Forms.Padding(2);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(201, 23);
-            this.txtApellidos.TabIndex = 97;
+            this.txtSNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSNombre.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSNombre.Location = new System.Drawing.Point(229, 112);
+            this.txtSNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSNombre.Name = "txtSNombre";
+            this.txtSNombre.Size = new System.Drawing.Size(201, 23);
+            this.txtSNombre.TabIndex = 97;
             // 
             // label6
             // 
@@ -317,15 +318,15 @@
             this.label6.TabIndex = 96;
             this.label6.Text = "Segundo Nombre : ";
             // 
-            // txtNombres
+            // txtPNombres
             // 
-            this.txtNombres.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNombres.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.Location = new System.Drawing.Point(229, 77);
-            this.txtNombres.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(201, 23);
-            this.txtNombres.TabIndex = 95;
+            this.txtPNombres.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPNombres.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPNombres.Location = new System.Drawing.Point(229, 77);
+            this.txtPNombres.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPNombres.Name = "txtPNombres";
+            this.txtPNombres.Size = new System.Drawing.Size(201, 23);
+            this.txtPNombres.TabIndex = 95;
             // 
             // label3
             // 
@@ -361,19 +362,6 @@
             this.label2.Size = new System.Drawing.Size(115, 16);
             this.label2.TabIndex = 92;
             this.label2.Text = "Identificación :";
-            // 
-            // btnBack
-            // 
-            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Image = global::Presentacion.Properties.Resources.logout;
-            this.btnBack.Location = new System.Drawing.Point(900, 15);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(49, 50);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnBack.TabIndex = 116;
-            this.btnBack.TabStop = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnEliminarCliente
             // 
@@ -488,6 +476,31 @@
             this.lblValId.Text = "Invalido";
             this.lblValId.Visible = false;
             // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Image = global::Presentacion.Properties.Resources.logout;
+            this.btnBack.Location = new System.Drawing.Point(900, 15);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(49, 50);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBack.TabIndex = 116;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // lblEdad
+            // 
+            this.lblEdad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdad.Location = new System.Drawing.Point(514, 259);
+            this.lblEdad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(17, 16);
+            this.lblEdad.TabIndex = 160;
+            this.lblEdad.Text = "--";
+            // 
             // ControlDocentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,6 +508,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(960, 534);
+            this.Controls.Add(this.lblEdad);
             this.Controls.Add(this.lblValId);
             this.Controls.Add(this.lblVal);
             this.Controls.Add(this.lblValTel);
@@ -503,38 +517,38 @@
             this.Controls.Add(this.btnBuscarCliente);
             this.Controls.Add(this.btnRegistarCliente);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.CBcargo);
+            this.Controls.Add(this.dtFecha);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtSApellido);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtPApellido);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtApellidos);
+            this.Controls.Add(this.txtSNombre);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtNombres);
+            this.Controls.Add(this.txtPNombres);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtIdentificacion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dgvCustomerList);
+            this.Controls.Add(this.dgvDocentes);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(976, 573);
             this.Name = "ControlDocentes";
             this.Text = "ControlDocentes";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDocentes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -542,29 +556,29 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dgvCustomerList;
+        private System.Windows.Forms.DataGridView dgvDocentes;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox CBcargo;
+        private System.Windows.Forms.DateTimePicker dtFecha;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSApellido;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtPApellido;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.TextBox txtSNombre;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtNombres;
+        private System.Windows.Forms.TextBox txtPNombres;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtIdentificacion;
         private System.Windows.Forms.Label label2;
@@ -576,5 +590,6 @@
         private System.Windows.Forms.Label lblValTel;
         private System.Windows.Forms.Label lblVal;
         private System.Windows.Forms.Label lblValId;
+        private System.Windows.Forms.Label lblEdad;
     }
 }

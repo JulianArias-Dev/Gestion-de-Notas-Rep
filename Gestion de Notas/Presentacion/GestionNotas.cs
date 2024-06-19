@@ -18,8 +18,24 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
 
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

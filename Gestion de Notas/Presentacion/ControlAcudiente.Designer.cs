@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+
+            this.components = new System.ComponentModel.Container();
+            this.dtFecha = new System.Windows.Forms.DateTimePicker();
+
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -56,7 +60,16 @@
             this.lblValId = new System.Windows.Forms.Label();
             this.lblVal = new System.Windows.Forms.Label();
             this.lblValTel = new System.Windows.Forms.Label();
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerList)).BeginInit();
+
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAcudientesList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +85,17 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(201, 24);
             this.dateTimePicker1.TabIndex = 141;
+            this.dtFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtFecha.Font = new System.Drawing.Font("Lucida Fax", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFecha.Location = new System.Drawing.Point(606, 123);
+            this.dtFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.dtFecha.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
+            this.dtFecha.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtFecha.Name = "dtFecha";
+            this.dtFecha.Size = new System.Drawing.Size(201, 24);
+            this.dtFecha.TabIndex = 10;
+
             // 
             // label13
             // 
@@ -99,6 +123,7 @@
             // 
             // textBox4
             // 
+
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox4.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(606, 87);
@@ -106,6 +131,15 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(201, 23);
             this.textBox4.TabIndex = 138;
+
+            this.txtDireccion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDireccion.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.Location = new System.Drawing.Point(606, 87);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(201, 23);
+            this.txtDireccion.TabIndex = 9;
+
             // 
             // label8
             // 
@@ -128,6 +162,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(201, 23);
             this.txtTelefono.TabIndex = 136;
+            this.txtTelefono.TabIndex = 7;
             this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
             // label1
@@ -151,6 +186,7 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(201, 23);
             this.txtCorreo.TabIndex = 134;
+            this.txtCorreo.TabIndex = 6;
             this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // label4
@@ -167,6 +203,7 @@
             // 
             // textBox3
             // 
+
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox3.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(174, 161);
@@ -174,6 +211,14 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(201, 23);
             this.textBox3.TabIndex = 132;
+            this.txtSApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSApellido.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSApellido.Location = new System.Drawing.Point(174, 161);
+            this.txtSApellido.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSApellido.Name = "txtSApellido";
+            this.txtSApellido.Size = new System.Drawing.Size(201, 23);
+            this.txtSApellido.TabIndex = 5;
+            this.txtSApellido.TextChanged += new System.EventHandler(this.txtSApellido_TextChanged);
             // 
             // label7
             // 
@@ -280,6 +325,7 @@
             this.txtPapellido.Name = "txtPapellido";
             this.txtPapellido.Size = new System.Drawing.Size(201, 23);
             this.txtPapellido.TabIndex = 125;
+            this.txtPapellido.TabIndex = 4;
             // 
             // label5
             // 
@@ -302,6 +348,13 @@
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(201, 23);
             this.txtApellidos.TabIndex = 123;
+            this.txtSNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSNombre.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSNombre.Location = new System.Drawing.Point(174, 91);
+            this.txtSNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSNombre.Name = "txtSNombre";
+            this.txtSNombre.Size = new System.Drawing.Size(201, 23);
+            this.txtSNombre.TabIndex = 3;
             // 
             // label6
             // 
@@ -324,6 +377,13 @@
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(201, 23);
             this.txtNombres.TabIndex = 121;
+            this.txtPNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPNombre.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPNombre.Location = new System.Drawing.Point(174, 56);
+            this.txtPNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPNombre.Name = "txtPNombre";
+            this.txtPNombre.Size = new System.Drawing.Size(201, 23);
+            this.txtPNombre.TabIndex = 2;
             // 
             // label3
             // 
@@ -346,6 +406,7 @@
             this.txtIdentificacion.Name = "txtIdentificacion";
             this.txtIdentificacion.Size = new System.Drawing.Size(201, 23);
             this.txtIdentificacion.TabIndex = 119;
+            this.txtIdentificacion.TabIndex = 1;
             this.txtIdentificacion.TextChanged += new System.EventHandler(this.txtIdentificacion_TextChanged);
             // 
             // label2
@@ -359,6 +420,78 @@
             this.label2.Size = new System.Drawing.Size(115, 16);
             this.label2.TabIndex = 118;
             this.label2.Text = "Identificación :";
+            // 
+            // lblValId
+            // 
+            this.lblValId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblValId.AutoSize = true;
+            this.lblValId.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValId.ForeColor = System.Drawing.Color.Red;
+            this.lblValId.Location = new System.Drawing.Point(379, 27);
+            this.lblValId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblValId.Name = "lblValId";
+            this.lblValId.Size = new System.Drawing.Size(65, 16);
+            this.lblValId.TabIndex = 156;
+            this.lblValId.Text = "Invalido";
+            this.lblValId.Visible = false;
+            // 
+            // lblVal
+            // 
+            this.lblVal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVal.AutoSize = true;
+            this.lblVal.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVal.ForeColor = System.Drawing.Color.Red;
+            this.lblVal.Location = new System.Drawing.Point(811, 23);
+            this.lblVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblVal.Name = "lblVal";
+            this.lblVal.Size = new System.Drawing.Size(65, 16);
+            this.lblVal.TabIndex = 157;
+            this.lblVal.Text = "Invalido";
+            this.lblVal.Visible = false;
+            // 
+            // lblValTel
+            // 
+            this.lblValTel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblValTel.AutoSize = true;
+            this.lblValTel.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValTel.ForeColor = System.Drawing.Color.Red;
+            this.lblValTel.Location = new System.Drawing.Point(811, 55);
+            this.lblValTel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblValTel.Name = "lblValTel";
+            this.lblValTel.Size = new System.Drawing.Size(65, 16);
+            this.lblValTel.TabIndex = 158;
+            this.lblValTel.Text = "Invalido";
+            this.lblValTel.Visible = false;
+            // 
+            // lblEdad
+            // 
+            this.lblEdad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdad.Location = new System.Drawing.Point(445, 168);
+            this.lblEdad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(17, 16);
+            this.lblEdad.TabIndex = 159;
+            this.lblEdad.Text = "--";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.Tag = "";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.clean;
+            this.pictureBox1.Location = new System.Drawing.Point(771, 168);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 160;
+            this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Boton de limpiar");
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
             // btnBack
             // 
@@ -488,5 +621,8 @@
         private System.Windows.Forms.Label lblValId;
         private System.Windows.Forms.Label lblVal;
         private System.Windows.Forms.Label lblValTel;
+        private System.Windows.Forms.Label lblEdad;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
