@@ -1,11 +1,7 @@
 ﻿using Entity;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
 namespace BLL
 {
@@ -21,6 +17,7 @@ namespace BLL
                 string title = "";
                 string notificacion = "";
                 string asunto = "";
+                string year = DateTime.Now.Year.ToString();
 
                 switch (procedimiento)
                 {
@@ -30,35 +27,85 @@ namespace BLL
                         asunto = "Registro Exitoso";
                         break;
                     case 3:
-                        title = "Este es un mensaje de ISMI by Hola Mundo Dev´s House ©";
-                        notificacion = "Sus datos han sido actualizados correctamente. Si no tiene conocimiento del proceso, lo invitanmos a contactarse con el administrador del sistema.";
+                        title = "Actualización de Datos en ISMI by Hola Mundo Dev's House ©";
+                        notificacion = "Sus datos han sido actualizados correctamente. Si no tiene conocimiento del proceso, lo invitamos a contactarse con el administrador del sistema.";
                         asunto = "Modificación Exitosa";
                         break;
                     case 4:
-                        title = "Este es un mensaje de ISMI by Hola Mundo Dev´s House ©";
+                        title = "Eliminación de Datos en ISMI by Hola Mundo Dev's House ©";
                         notificacion = "Sus datos han sido eliminados correctamente del sistema.";
-                        asunto = "Rescisión";
+                        asunto = "Eliminación de Datos";
                         break;
                 }
 
                 string from = "ismibyhmdh@gmail.com";
                 string to = email;
                 string subject = asunto;
-                string body = $"<html lang='en'>" +
-                              $"<body>\r\n        " +
-                              $"<h2 style=\"font-family:Georgia, Times, serif;\">{title} {name}</h2>\r\n" +
-                              $"<div style=\"display: flex; justify-content:center; align-items: center; \">\r\n   " +
-                              $"<img style=\"height: 15%; width: 25%;\" src=\"https://res.cloudinary.com/dlx1sufu4/image/upload/v1718503909/ISMI_kz6yow.png\" alt=\"Img\">\r\n" +
-                              $"<img style=\"height: 20%; width: 30%;\" src=\"https://res.cloudinary.com/dlx1sufu4/image/upload/v1718503968/HMDH_jlnt45.png\" alt=\"hmdv\">\r\n" +
-                              $" </div>\r\n        " +
-                              $"<div style=\"font-size: larger; font-family: Georgia, 'Times New Roman', Times, serif;\">\r\n" +
-                              $"<p style=\"font-weight: bold;\">{notificacion}</p>\r\n            " +
-                              $"<p>Gracias por confiar en nosotros</p>" +
-                              $"<p>Intelligent Score Management for Institutes (ISMI) es una plataforma que busca optimizar el proceso de " +
-                              $"control academico dentro de las instituciones. Esperamos que este año obtengas los resultados que esperas.</p>\r\n\r\n" +
-                              $"</div>\r\n" +
-                              $"</body>\r\n\r\n" +
-                              $"</html>";
+
+                string body = $@"
+                <html lang='es'>
+                <head>
+                    <style>
+                        body {{
+                            font-family: 'Arial', sans-serif;
+                            background-color: #f4f4f4;
+                            margin: 0;
+                            padding: 0;
+                        }}
+                        .container {{
+                            width: 80%;
+                            margin: auto;
+                            background-color: #ffffff;
+                            padding: 20px;
+                            border-radius: 10px;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        }}
+                        .header {{
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }}
+                        .header img {{
+                            max-width: 120px;
+                            margin: 0 20px;
+                        }}
+                        .title {{
+                            font-size: 24px;
+                            color: #333333;
+                        }}
+                        .content {{
+                            font-size: 16px;
+                            line-height: 1.6;
+                            color: #333333;
+                        }}
+                        .footer {{
+                            font-size: 14px;
+                            color: #888888;
+                            margin-top: 20px;
+                            text-align: center;
+                        }}
+                    </style>
+                </head>
+                <body>
+                    <div class='container'>
+                        <div class='header'>
+                            <h1 class='title'>{title}</h1>
+                            <div style='display: flex; justify-content: center; align-items: center;'>
+                                <img src='https://res.cloudinary.com/dlx1sufu4/image/upload/v1718503909/ISMI_kz6yow.png' alt='ISMI Logo'>
+                                <img src='https://res.cloudinary.com/dlx1sufu4/image/upload/v1718503968/HMDH_jlnt45.png' alt='HMDH Logo'>
+                            </div>
+                        </div>
+                        <div class='content'>
+                            <p>Estimado/a {name},</p>
+                            <p>{notificacion}</p>
+                            <p>Gracias por confiar en nosotros.</p>
+                            <p><strong>Intelligent Score Management for Institutes (ISMI)</strong> es una plataforma diseñada para optimizar el proceso de control académico dentro de las instituciones. Esperamos que este año obtenga los resultados que espera.</p>
+                        </div>
+                        <div class='footer'>
+                            <p>&copy; {year} ISMI by Hola Mundo Dev's House. Todos los derechos reservados.</p>
+                        </div>
+                    </div>
+                </body>
+                </html>";
 
                 // Create a MailMessage object
                 MailMessage myMail = new MailMessage();
@@ -67,10 +114,6 @@ namespace BLL
                 myMail.Subject = subject;
                 myMail.Body = body;
                 myMail.IsBodyHtml = true;
-
-                // Optional: Add an attachment
-                // MailAttachment myAttachment = new MailAttachment("c:\\attach\\attach1.txt", MailEncoding.Base64);
-                // myMail.Attachments.Add(myAttachment);
 
                 // Configure the SMTP client
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);

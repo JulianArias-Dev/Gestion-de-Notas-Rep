@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AcudientesService.cs" />
     <Compile Include="CursosService.cs" />
+    <Compile Include="Enrcypt.cs" />
     <Compile Include="EstudiantesService.cs" />
     <Compile Include="SendMails.cs" />
     <Compile Include="Validaciones.cs" />

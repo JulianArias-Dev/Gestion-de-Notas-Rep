@@ -160,9 +160,9 @@ namespace Presentacion
 
         private Acudiente recolectarInformacion()
         {
-            if (string.IsNullOrEmpty(txtIdentificacion.Text))
+            if (string.IsNullOrEmpty(txtIdentificacion.Text) || lblValId.Visible)
             {
-                MessageBox.Show("El campo de identificacion no puede estar vacío");
+                MessageBox.Show("El campo de identificacion no puede estar vacío o contener datos invalidos");
                 txtIdentificacion.Focus();
                 return null;
             }
@@ -184,9 +184,9 @@ namespace Presentacion
                 txtSApellido.Focus();
                 return null;
             }
-            else if (string.IsNullOrEmpty(txtCorreo.Text))
+            else if (string.IsNullOrEmpty(txtCorreo.Text) || lblValId.Visible)
             {
-                MessageBox.Show("El campo de Correo Electrónico no puede estar vacío");
+                MessageBox.Show("El campo de Correo Electrónico no puede estar vacío o contener datos invalidos");
                 txtCorreo.Focus();
                 return null;
             }
@@ -196,15 +196,9 @@ namespace Presentacion
                 txtDireccion.Focus();
                 return null;
             }
-            else if (string.IsNullOrEmpty(txtTelefono.Text))
+            else if (string.IsNullOrEmpty(txtTelefono.Text) || lblValTel.Visible)
             {
-                MessageBox.Show("El campo de Teléfono no puede estar vacío");
-                txtTelefono.Focus();
-                return null;
-            }
-            else if (string.IsNullOrEmpty(txtTelefono.Text))
-            {
-                MessageBox.Show("El campo de Teléfono no puede estar vacío");
+                MessageBox.Show("El campo de Teléfono no puede estar vacío o contener datos invaildos");
                 txtTelefono.Focus();
                 return null;
             }
@@ -274,7 +268,6 @@ namespace Presentacion
 
             if (table!=null)
             {
-                dgvAcudientesList.Rows.Clear();
                 dgvAcudientesList.DataSource = table;
                 dgvAcudientesList.Refresh();
             }
